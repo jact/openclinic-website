@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: xhtml_start.php,v 1.1 2005/04/04 19:28:00 jact Exp $
+ * $Id: xhtml_start.php,v 1.2 2005/04/06 19:45:25 jact Exp $
  */
 
 /**
@@ -65,7 +65,8 @@
     }
   }
 
-  if (strpos($contentType, "application/xhtml+xml") !== false)
+  // I hate MSIE (compatMode disabled in 6.0 to get same look & feel)
+  if (strpos($contentType, "application/xhtml+xml") !== false || strpos($_SERVER['HTTP_USER_AGENT'], "MSIE 6.0"))
   {
     // To prevent 'short_open_tag = On' mistake
     echo '<?xml version="1.0" encoding="' . OPEN_ENCODING . '" standalone="no" ?>' . "\n";
@@ -81,11 +82,10 @@
     echo " : " . $title;
   }
 ?></title>
-
 <?php
   if ( !$xhtml )
   {
-    echo '<meta http-equiv="Content-Type" content="' . $contentType . '" />';
+    echo "\n" . '<meta http-equiv="Content-Type" content="' . $contentType . '" />' . "\n";
   }
 ?>
 
