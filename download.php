@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: download.php,v 1.1 2005/02/22 19:14:30 jact Exp $
+ * $Id: download.php,v 1.2 2005/04/04 19:29:21 jact Exp $
  */
 
 /**
@@ -41,7 +41,7 @@
   <h2>What is CSHC-DSS?</h2>
 
   <p>
-    This project explains how the enviroment must be set where OpenClinic is to be on production. It is included different aspects: from the choice of operative system to how it must be set to be a web server and database.
+    This project explains how the environment must be set where OpenClinic is to be on production. It is included different aspects: from the choice of operative system to how it must be set to be a web server and database.
   </p>
 </div>
 
@@ -49,7 +49,7 @@
   <h2>What is CSHC-DI?</h2>
 
   <p>
-    In this project it is shown the development proccess of the final desing: the OpenClinic software. How the data base has been designed, the classes, the different pages and why some decissions have been taken in the design. You can find also a detailed maunal to use the application.
+    In this project it is shown the development proccess of the final design: the OpenClinic software. How the database has been designed, the classes, the different pages and why some decissions have been taken in the design. You can find also a detailed manual to use the application.
   </p>
 
   <p>
