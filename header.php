@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: header.php,v 1.1 2005/02/22 19:14:30 jact Exp $
+ * $Id: header.php,v 1.2 2005/04/04 19:28:46 jact Exp $
  */
 
 /**
@@ -23,35 +23,11 @@
     exit();
   }
 
-  // To prevent 'short_open_tag = On' mistake
-  echo '<?xml version="1.0" encoding="' . "ISO-8859-1" . '" standalone="no" ?>' . "\n";
+  ////////////////////////////////////////////////////////////////////
+  // XHTML Start (XML prolog, DOCTYPE, title page and meta data)
+  ////////////////////////////////////////////////////////////////////
+  require_once("./xhtml_start.php");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
-<head>
-<title><?php
-  echo "OpenClinic Project";
-  if (isset($title) && !empty($title))
-  {
-    echo " : " . $title;
-  }
-?></title>
-
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-
-<meta http-equiv="imagetoolbar" content="no" />
-
-<meta name="MSSmartTagsPreventParsing" content="TRUE" />
-
-<meta name="robots" content="all" />
-
-<meta name="keywords" content="OpenClinic, open source, gpl, healthcare, php, mysql, coresis" />
-
-<meta name="description" content="OpenClinic is an easy to use, open source, medical records system written in PHP" />
-
-<meta name="author" content="Jose Antonio Chavarría" />
-
-<meta name="copyright" content="2002-2005 Jose Antonio Chavarría" />
 
 <link rel="home" title="Home page" href="./index.php" />
 
