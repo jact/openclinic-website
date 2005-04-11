@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: footer.php,v 1.1 2005/02/22 19:14:30 jact Exp $
+ * $Id: footer.php,v 1.2 2005/04/11 18:00:20 jact Exp $
  */
 
 /**
@@ -14,7 +14,7 @@
  ********************************************************************
  * Contains the common foot of the web pages
  ********************************************************************
- * Author: jact <jachavar@terra.es>
+ * Author: jact <openclinic@gmail.com>
  */
 
   if (str_replace("\\", "/", __FILE__) == $_SERVER['SCRIPT_FILENAME'])
@@ -60,6 +60,18 @@
 
   <hr />
 
+  <h4>SF's links</h4>
+
+  <ul>
+    <li><a href="http://sourceforge.net/projects/openclinic/">Project page</a></li>
+
+    <li><a href="http://sourceforge.net/tracker/?group_id=70742&amp;atid=528857">Report bugs</a></li>
+
+    <li><a href="http://sourceforge.net/forum/?group_id=70742">Forums</a></li>
+  </ul>
+
+  <hr />
+
   <p><a href="http://sourceforge.net/"><img src="./i/sf-logo.png" title="Project hosted in SourceForge.net" width="125" height="37" alt="SourceForge logo" /></a></p>
 
   <p><a href="http://www.coresis.com/"><img id="coresis" src="./i/coresis.png" title="Thanks Coresis" width="77" height="36" alt="Coresis logo" /></a></p>
@@ -68,9 +80,9 @@
 </div>
 
 <div id="footer">
-  <span class="left">Copyright &copy; 2002-2005 <a href="mailto:jachavar@terra.es">Jose Antonio Chavarría</a>. This website is licensed under <a href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a></span>
+  <span class="left">Copyright &copy; 2002-2005 <a href="mailto:openclinic@gmail.com?subject=OpenClinic">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a></span>
 
-  <div class="right">Last modified: 2005-02-20</div>
+  <div class="right">Last modified: 2005-04-11</div>
 </div>
 </body>
 </html>
