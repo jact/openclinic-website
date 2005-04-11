@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: download.php,v 1.2 2005/04/04 19:29:21 jact Exp $
+ * $Id: download.php,v 1.3 2005/04/11 17:58:37 jact Exp $
  */
 
 /**
@@ -14,7 +14,7 @@
  ********************************************************************
  * Download explanations page
  ********************************************************************
- * Author: jact <jachavar@terra.es>
+ * Author: jact <openclinic@gmail.com>
  */
 
   ////////////////////////////////////////////////////////////////////
@@ -55,6 +55,65 @@
   <p>
     All available documentation to download (0.1 version) is for 0.6 version of OpenClinic. Right now it has been upgrading to fit 0.7 version.
   </p>
+</div>
+
+<div class="notice">
+  <h2>Firmas de los archivos para comprobar su autenticidad</h2>
+
+  <p>
+    En la siguiente tabla os facilitamos las firmas de los archivos que se pueden descargar en formato md5. De esta forma podreis verificar su buen estado y atenticidad.
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Archivo</th>
+
+        <th>Firma md5</th>
+      </tr>
+    </thead>
+
+    <tbody>
+<?php
+  $array = array(
+    'c70d407135246f7d064226a79cbb23f4' => 'openclinic-0.1.tar.gz',
+    'cf43efbd87203738b49216e9717951da' => 'openclinic-0.2.tar.gz',
+    'e39ffe06b0ba5d58d59cf1b1f9cca7e8' => 'openclinic-0.3.tar.gz',
+    '8275d2d29d9bddb09f2c0f10a90084fd' => 'openclinic-0.4.tar.bz2',
+    '9868a8ca4311590287dd88138a9e80f4' => 'openclinic-0.4.tar.gz',
+    '9512485bd67b61e7ee29970b390c0c42' => 'openclinic-0.5.tar.bz2',
+    'c00c83e732394902f0dc2041e9d0d6cd' => 'openclinic-0.5.tar.gz',
+    'a26aae34d4f9dd0f292d2e040b7c7f7b' => 'openclinic-0.6.tar.bz2',
+    '6247d609212e492eb9e943624ca10962' => 'openclinic-0.6.tar.gz',
+    '0338bd0e62ecc971d4a863a388cc1ad1' => 'openclinic-0.7.tar.bz2',
+    '029f51523c202e2d1afff8837adb2df5' => 'openclinic-0.7.tar.gz',
+    'c28c1500c9e92ac7c40c272c3e47b6c9' => 'openclinic-lang-bulgarian-0.3.zip',
+    '8faa4419ebffdee3a8792df79a1d2c57' => 'openclinic-lang-nl_BE-0.6.zip',
+    '66938a130902dc763fb8f98a5e6a6aa5' => 'openclinic-lang-nl_BE-0.7.zip',
+    'a387b15dda4de9062946b62c2844db5d' => 'openclinic-lang-zh_TW-0.7.zip',
+    '592cdeca61f264ddd529871942a4cfc3' => 'cshc-di-html-0.1_es.zip',
+    '90401fc077b46b306f019604b6673e7a' => 'cshc-di-pdf-0.1_es.zip',
+    '9b65c6095d307d205d80ec6cfe69f6a2' => 'cshc-di-rtf-0.1_es.zip',
+    '6a9623e9c6a824c8e1f66aa05d17b0f0' => 'cshc-di-slideshow-0.1_es.zip',
+    '74ce94de590a28e0d5e8537de305cdb1' => 'cshc-di-xml-0.1_es.zip',
+    '799402d463fb26bb43410f7d3170d2c1' => 'cshc-dss-chm-0.1_es.zip',
+    'e5e2a16689f8b0548e29d8522c2827f6' => 'cshc-dss-html-0.1_es.zip',
+    '23e71a0d70001d40b3ec101e99f6a979' => 'cshc-dss-pdf-0.1_es.zip',
+    '30efd8e7b49f12677fa0cc851551cc02' => 'cshc-dss-rtf-0.1_es.zip',
+    '564834bae00ccfb70407a26ce6a124d4' => 'cshc-dss-xhtml-0.1_es.zip',
+    '6f8206ad4b98c9d7999139ed5dc5fe60' => 'cshc-dss-xml-0.1_es.zip'
+  );
+
+  foreach ($array as $key => $value)
+  {
+    echo "<tr>\n";
+    echo '<td><code>' . $value . "</code></td>\n";
+    echo '<td><code>' . $key . "</code></td>\n";
+    echo "</tr>\n";
+  }
+?>
+    </tbody>
+  </table>
 </div>
 
 <?php
