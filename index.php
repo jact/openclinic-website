@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: index.php,v 1.1 2005/02/22 19:14:30 jact Exp $
+ * $Id: index.php,v 1.2 2005/04/11 18:02:02 jact Exp $
  */
 
 /**
@@ -14,7 +14,7 @@
  ********************************************************************
  * Home page
  ********************************************************************
- * Author: jact <jachavar@terra.es>
+ * Author: jact <openclinic@gmail.com>
  */
 
   ////////////////////////////////////////////////////////////////////
@@ -33,7 +33,7 @@
   <h1>What is OpenClinic project?</h1>
 
   <p>
-    OpenClinic is an easy to use, open source, medical records system written in <a href="http://www.php.net">PHP</a>. It has been mainly thougth for private clinics, surgeries and private doctors. It is platform independent and it has multilanguage architecture.
+    OpenClinic is an easy to use, open source, medical records system written in <a href="http://www.php.net"><acronym title="PHP: Hypertext Preprocessor">PHP</acronym></a>. It has been mainly thougth for private clinics, surgeries and private doctors. It is platform independent and it has multilanguage architecture.
   </p>
 
   <hr />
@@ -93,9 +93,9 @@
 
     <li><a href="http://www.mysql.com/">MySQL</a> (tested with versions 3.23.36, 3.23.49, 3.23.51, 3.23.52, 3.23.54, 3.23.55, 4.0.16 and 4.0.18);</li>
 
-    <li>a web server prepared to execute PHP code (like <a href="http://httpd.apache.org/">Apache</a>);</li>
+    <li>a web server prepared to execute <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> code (like <a href="http://httpd.apache.org/">Apache</a>);</li>
 
-    <li>and, of course, a web browser (with JavaScript and good CSS2 support). We recommend <a href="http://www.mozilla.org/">Mozilla</a> or <a href="http://www.mozilla.org/products/firefox/">FireFox</a>.</li>
+    <li>and, of course, a web browser (with JavaScript and good <acronym title="Cascading Style Sheet level 2">CSS2</acronym> support). We recommend <a href="http://www.mozilla.org/">Mozilla</a> or <a href="http://www.mozilla.org/products/firefox/">FireFox</a>.</li>
   </ul>
 </div>
 
@@ -113,7 +113,7 @@
 
     <li><strong>Operating System:</strong> OS Independent</li>
 
-    <li><strong>Programming Language:</strong> <a href="http://www.php.net">PHP</a></li>
+    <li><strong>Programming Language:</strong> <a href="http://www.php.net">PHP</a>, <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript</a></li>
 
     <li><strong>Topic:</strong> Dynamic Content</li>
   </ul>
