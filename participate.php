@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: participate.php,v 1.1 2005/02/22 19:14:30 jact Exp $
+ * $Id: participate.php,v 1.2 2005/04/11 18:03:46 jact Exp $
  */
 
 /**
@@ -14,7 +14,7 @@
  ********************************************************************
  * Participate page
  ********************************************************************
- * Author: jact <jachavar@terra.es>
+ * Author: jact <openclinic@gmail.com>
  */
 
   ////////////////////////////////////////////////////////////////////
@@ -57,7 +57,7 @@
   <h2>HTML scheme</h2>
 
   <p>
-    In case you want to make a CSS for OpenClinic, this is the scheme used in HTML pages.
+    In case you want to make a <acronym title="Cascading Style Sheet">CSS</acronym> for OpenClinic, this is the scheme used in <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> pages.
   </p>
 
   <pre>
