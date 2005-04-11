@@ -5,7 +5,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: openclinic.css,v 1.1 2005/02/22 19:14:30 jact Exp $
+ * $Id: openclinic.css,v 1.2 2005/04/11 18:05:22 jact Exp $
  */
 
 /**
@@ -13,13 +13,13 @@
  ********************************************************************
  * CSS for OpenClinic Web Site
  ********************************************************************
- * Author: jact <jachavar@terra.es>
+ * Author: jact <openclinic@gmail.com>
  */
 
 * {
   font-family: "lucida sans unicode", verdana, helvetica, arial, sans-serif;
 }
-body {
+html, body {
   margin: 0;
   padding: 0;
   background: #CED3DE;
@@ -115,7 +115,7 @@ html>body #content {
 .notice li {
   margin-bottom: 8px;
 }
-code {
+code, code del {
   font-family: "Lucida Sans Typewriter", "Courier New", monospace;
 }
 var {
@@ -268,4 +268,35 @@ a img {
   padding: 0 0.4em;
   background: #fff;
   color: #0c479d;
+}
+pre {
+  background: #CCECF9;
+  color: #000;
+  border: 1px solid #84D2F5;
+  padding: 2px 3px;
+}
+code.comment {
+  background: inherit;
+  color: #009585;
+  font-weight: bold;
+}
+code del {
+  background: #FFCFD6;
+}
+dt {
+  margin: 2.5em 0 1em 0;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  background: #5ABAD6;
+  color: #fff;
+}
+th, td {
+  text-align: left;
+  padding: 3px 12px;
+}
+td {
+  border-bottom: 1px solid #80CBE3;
 }
