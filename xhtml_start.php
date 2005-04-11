@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: xhtml_start.php,v 1.2 2005/04/06 19:45:25 jact Exp $
+ * $Id: xhtml_start.php,v 1.3 2005/04/11 18:03:57 jact Exp $
  */
 
 /**
@@ -14,7 +14,7 @@
  ********************************************************************
  * Contains the common XHTML content of the web pages (XML prolog, DOCTYPE, title page and meta data)
  ********************************************************************
- * Author: jact <jachavar@terra.es>
+ * Author: jact <openclinic@gmail.com>
  */
 
   if (str_replace("\\", "/", __FILE__) == $_SERVER['SCRIPT_FILENAME'])

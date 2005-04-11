@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: header.php,v 1.2 2005/04/04 19:28:46 jact Exp $
+ * $Id: header.php,v 1.3 2005/04/11 18:00:38 jact Exp $
  */
 
 /**
@@ -14,7 +14,7 @@
  ********************************************************************
  * Contains the common header of the web pages
  ********************************************************************
- * Author: jact <jachavar@terra.es>
+ * Author: jact <openclinic@gmail.com>
  */
 
   if (str_replace("\\", "/", __FILE__) == $_SERVER['SCRIPT_FILENAME'])
@@ -31,7 +31,7 @@
 
 <link rel="home" title="Home page" href="./index.php" />
 
-<link href="mailto:jachavar&#64;terra.es" rev="made" />
+<link href="mailto:openclinic&#64;gmail.com" rev="made" />
 
 <link rel="shortcut icon" type="image/png" href="./i/miniopc.png" />
 

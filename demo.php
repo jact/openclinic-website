@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: demo.php,v 1.1 2005/02/22 19:14:30 jact Exp $
+ * $Id: demo.php,v 1.2 2005/04/11 17:57:51 jact Exp $
  */
 
 /**
@@ -14,7 +14,7 @@
  ********************************************************************
  * Demo explanations page
  ********************************************************************
- * Author: jact <jachavar@terra.es>
+ * Author: jact <openclinic@gmail.com>
  */
 
   ////////////////////////////////////////////////////////////////////
