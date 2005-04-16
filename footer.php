@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: footer.php,v 1.2 2005/04/11 18:00:20 jact Exp $
+ * $Id: footer.php,v 1.3 2005/04/16 18:34:40 jact Exp $
  */
 
 /**
@@ -33,11 +33,15 @@
 <?php require_once("./navbar.php"); ?>
 
   <div class="w3cButton">
-    <a href="http://validator.w3.org/check/referer"><span class="w3c">W3C</span> <span class="spec">XHTML 1.1</span></a>
+    <a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.1"><span class="w3c">W3C</span> <span class="spec">XHTML 1.1</span></a>
   </div>
 
   <div class="w3cButton">
-    <a href="http://jigsaw.w3.org/css-validator/check/referer"><span class="w3c">W3C</span> <span class="spec">CSS2</span></a>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><span class="w3c">W3C</span> <span class="spec">CSS2</span></a>
+  </div>
+
+  <div class="w3cButton">
+    <a href="./ocw_rss2.php" title="Really Simple Syndication 2.0 (News &amp; FAQ sections)"><span class="w3c">RSS</span> <span class="spec">2.0</span></a>
   </div>
 </div>
 
@@ -82,7 +86,7 @@
 <div id="footer">
   <span class="left">Copyright &copy; 2002-2005 <a href="mailto:openclinic@gmail.com?subject=OpenClinic">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a></span>
 
-  <div class="right">Last modified: 2005-04-11</div>
+  <div class="right">Last modified: 2005-04-16</div>
 </div>
 </body>
 </html>
