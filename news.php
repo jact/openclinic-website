@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: news.php,v 1.3 2005/04/16 15:16:07 jact Exp $
+ * $Id: news.php,v 1.4 2005/04/16 18:32:29 jact Exp $
  */
 
 /**
@@ -57,7 +57,7 @@
   <p class="sign">2005-04-10</p>
 </div>
 
-<div class="notice">
+<div class="notice" id="released_0_7">
   <h1>OpenClinic 0.7 released!</h1>
 
   <p>
@@ -99,7 +99,7 @@
   <p class="sign">2004-12-07</p>
 </div>
 
-<div class="notice">
+<div class="notice" id="upgrade_0_6">
   <h1>Upgrade from 0.6 version</h1>
 
   <p>
