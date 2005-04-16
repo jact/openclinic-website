@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: header.php,v 1.3 2005/04/11 18:00:38 jact Exp $
+ * $Id: header.php,v 1.4 2005/04/16 18:33:02 jact Exp $
  */
 
 /**
@@ -38,6 +38,8 @@
 <!--link rel="bookmark icon" type="image/ico" href="./favicon.ico" /-->
 
 <link href="./c/openclinic.css" type="text/css" rel="stylesheet" title="OpenClinic Web Site" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="./ocw_rss2.php" />
 </head>
 <body>
 <div id="heading">
