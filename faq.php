@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: faq.php,v 1.3 2005/04/16 15:15:49 jact Exp $
+ * $Id: faq.php,v 1.4 2005/04/16 18:32:14 jact Exp $
  */
 
 /**
@@ -37,7 +37,7 @@
   </p>
 </div>
 
-<div class="notice">
+<div class="notice" id="medical_tests_problem">
   <h2>Problem to see medical tests</h2>
 
   <p>
@@ -58,7 +58,7 @@
   <p class="sign">2005-04-10</p>
 </div>
 
-<div class="notice">
+<div class="notice" id="translate_date_entries">
   <h2>How to translate the date-relative entries</h2>
 
   <p>
@@ -76,7 +76,7 @@
   <p class="sign">2005-04-06</p>
 </div>
 
-<div class="notice">
+<div class="notice" id="staff_member_header">
   <h2>How to fix the Staff Member bug in 0.7 version</h2>
 
   <p>
@@ -101,7 +101,7 @@ $thead = array(
   <p class="sign">2005-04-06</p>
 </div>
 
-<div class="notice">
+<div class="notice" id="second_surname_not_compulsory">
   <h2>How to achieve that the second surname family name was not compulsory</h2>
 
   <p>
@@ -123,11 +123,11 @@ $thead = array(
   <p class="sign">2005-04-04</p>
 </div>
 
-<div class="notice">
-  <h2>Validity dialogue to get access to install folder</h2>
+<div class="notice" id="install_authentication">
+  <h2>Authentication dialogue to get access to install folder</h2>
 
   <p>
-     The validity dialogue is shown when you try to get access to folder <code>install</code> in previous versions to 0.7 and the following files are active <code>.htaccess</code> in Apache configuration.
+     The authentication dialogue is shown when you try to get access to folder <code>install</code> in previous versions to 0.7 and the following files are active <code>.htaccess</code> in Apache configuration.
   </p>
 
   <p>
