@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: faq.php,v 1.2 2005/04/11 18:09:04 jact Exp $
+ * $Id: faq.php,v 1.3 2005/04/16 15:15:49 jact Exp $
  */
 
 /**
@@ -38,14 +38,14 @@
 </div>
 
 <div class="notice">
-  <h2>Problema al visualizar medical tests</h2>
+  <h2>Problem to see medical tests</h2>
 
   <p>
-    Hay un bug en la versión 0.7 que impide ver las medical tests de un medical problem. Hasta que se resuelva en una próxima versión, es posible mitigar sus efectos si se siguen estas 2 recomendaciones:
+    There is a bug in 0.7 version that does not allow to see the medical test in a medical problem. Until it is fixed in the next version, you can mitigate its misworking following these two advices:
   </p>
 
   <ul>
-    <li>The filenames of medical tests must be respect the guidelines descritas en el apartado <q>Code Files Format</q> del documento <a href="http://openclinic.sf.net/openclinic/coding_guidelines.html">Coding Guidelines</a></li>
+    <li>The filenames of medical tests must be respect the guidelines shown in the section <q>Code Files Format</q> inside the document <a href="http://openclinic.sf.net/openclinic/coding_guidelines.html">Coding Guidelines</a></li>
 
     <li>
       Edit <code>medical/test_list.php</code> and remove the line:
@@ -59,32 +59,32 @@
 </div>
 
 <div class="notice">
-  <h2>Cómo se traducen las cadenas relativas a las fechas</h2>
+  <h2>How to translate the date-relative entries</h2>
 
   <p>
-    Hay 2 cadenas en el fichero <code>.po</code> que pueden causar algún problema en el funcionamiento de OpenClinic. Son las relacionadas con las fechas (<code>'Y-m-d H:i:s'</code> y <code>'Y-m-d'</code>). Por defecto tienen formato ISO pero se pueden cambiar según la localización de cada lenguaje.
+    There are 2 entries in the file <code>.po</code> that can cause some problem in the way OpenClinic works. They are related with the dates (<code>'Y-m-d H:i:s'</code> y <code>'Y-m-d'</code>). By default they are in ISO format but they could be changed according to localization of every language.
   </p>
 
   <p>
-    La sintaxis a seguir es la que entiende la función <a href="http://www.php.net/date">date</a> de <acronym title="PHP: Hypertext Preprocessor">PHP</acronym>.
+    The syntax to follow is the one that is understand by the function <a href="http://www.php.net/date">date</a> of <acronym title="PHP: Hypertext Preprocessor">PHP</acronym>.
   </p>
 
   <p>
-    Para completar la traducción de un lenguaje, es posible traducir (no es obligatorio) también el fichero <code>copyright.txt</code>. Este archivo contiene una copia de la licencia <acronym title="GNU General Public License">GPL</acronym> de la aplicación y se muestra en la opción <strong>Home &raquo; License</strong>.
+     To complete the translation of a language, it is possible, but not compulsory, to translate also the file <code>copyright.txt</code>. This file has inside a copy of the <acronym title="GNU General Public License">GPL</acronym> of the software application and it is shown choosing the option <strong>Home &raquo; License</strong>.
   </p>
 
   <p class="sign">2005-04-06</p>
 </div>
 
 <div class="notice">
-  <h2>Cómo arreglar el bug de la página Staff Members en la versión 0.7</h2>
+  <h2>How to fix the Staff Member bug in 0.7 version</h2>
 
   <p>
-    Uno de los cambios en la versión 0.7 fue la eliminación de los perfiles. En la página citada no se eliminaron totalmente todas las referencias a los perfiles y esa es la razón por la hay una pequeña descoordinación entre contenidos y encabezados.
+    One of the improvements in 0.7 version was the profile removal. In the page aforementioned not all the profile references were deleted, that is the reason why there are a little misunderstanding between the content and the headers.
   </p>
 
   <p>
-    Para corregir manualmente el problema es necesario editar el fichero <code>admin/staff_list.php</code> y hacer los siguientes cambios:
+     To fix the problem by hand it is necessary to edit the file <code>admin/staff_list.php</code> and perform the following changes:
   </p>
 
   <pre><code>
@@ -102,14 +102,14 @@ $thead = array(
 </div>
 
 <div class="notice">
-  <h2>Cómo hacer que el segundo apellido no sea obligatorio</h2>
+  <h2>How to achieve that the second surname family name was not compulsory</h2>
 
   <p>
-    Han sido varias las personas que han pedido una forma para que el <strong>Surname 2</strong> no sea obligatorio. Estamos estudiando para la próxima versión que esta funcionalidad sea configurable.
+     Many people have asked the <strong>Surname 2</strong> was not compulsory. We are building the next version so this feature can be set.
   </p>
 
   <p>
-    Por el momento enumeramos los cambios mínimos que son necesarios. Hay que comentar las líneas siguientes en los archivos <code>classes/Patient.php</code>, <code>classes/Staff.php</code>, <code>classes/User.php</code> at <code>validateData()</code> method para que queden así:
+     By now we explain the way it can be fixed. You have to comment the lines in the next files <code>classes/Patient.php</code>, <code>classes/Staff.php</code>, <code>classes/User.php</code> at <code>validateData()</code> method so they remain this way::
   </p>
 
   <pre><code class="comment">
@@ -124,14 +124,14 @@ $thead = array(
 </div>
 
 <div class="notice">
-  <h2>Diálogo de validación al acceder al directorio install</h2>
+  <h2>Validity dialogue to get access to install folder</h2>
 
   <p>
-    El diálogo de validación aparece cuando se intenta acceder al directorio <code>install</code> en versiones anteriores a la 0.7 y se tienen activados los archivos <code>.htaccess</code> en la configuración de Apache.
+     The validity dialogue is shown when you try to get access to folder <code>install</code> in previous versions to 0.7 and the following files are active <code>.htaccess</code> in Apache configuration.
   </p>
 
   <p>
-    Para solucionar este problema sólo es necesario borrar el archivo <code>install/.htaccess</code>. Este fichero desempeña su función en la <a href="http://localhost/ocw/openclinic/index.php">versión DEMO alojada en SourceForge</a> pero en las versiones normales no tiene razón de ser. Por eso, a partir de la versión 0.7 ya no está disponible.
+     To fix this problem it is only necessary to delete the file <code>install/.htaccess</code>. This file is used in <a href="http://localhost/ocw/openclinic/index.php">DEMO version hosted in SourceForge</a> but in later versions it is not used at all. So from 0.7 version it is not available.
   </p>
 
   <p class="sign">2005-04-04</p>

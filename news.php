@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: news.php,v 1.2 2005/04/11 18:03:19 jact Exp $
+ * $Id: news.php,v 1.3 2005/04/16 15:16:07 jact Exp $
  */
 
 /**
@@ -29,29 +29,29 @@
   require_once("./header.php");
 ?>
 
-<div class="notice">
-  <h1>Cambio de la dirección de correo del proyecto</h1>
+<div class="notice" id="email_change">
+  <h1>New mail address project</h1>
 
   <p>
-    Con objeto de conseguir una cuenta de correo con más espacio y mejor eficiencia en los envíos (hemos tenido muchos problemas en este aspecto con la dirección actual), la nueva cuenta para contactar con nosotros es <strong>&lt;openclinic at gmail dot com&gt;</strong>. Os rogamos que ya no escribais a la anterior. Demasiados problemas nos ha proporcionado hasta ahora.
+    We have changed our mail address to get more space and better service to send mails (we have had many problems in this subject using the current mail address). The new mail address to contact us is <strong>&lt;openclinic at gmail dot com&gt;</strong>. Please do not sent any mail to the formes address. We have had too many problems until today.
   </p>
 
   <p>
-    Y una recomendación más: para evitar confundir vuestros mensajes con el spam que acosará a esta nueva cuenta, os agradeceríamos que como Subject del correo siempre apareciera la palabra <q><strong>OpenClinic</strong></q>. Muchas gracias por vuestra colaboración.
+    One more advice: to distinguish easily your mail from spam, we would be very please if you add in Subject the word <q><strong>OpenClinic</strong></q>. Thanks for your collaboration.
   </p>
 
   <p class="sign">2005-04-10</p>
 </div>
 
-<div class="notice">
+<div class="notice" id="new_language_packs">
   <h1>New language packs released</h1>
 
   <p>
-    Dirk De Naegel ha traducido las versiones 0.6 y 0.7 de OpenClinic al holandés (nl_BE). Eric Tang se ha encargado de traducir al chino tradicional (zh_TW BIG5) la versión 0.7. Muchas gracias a los dos. Todas ellas están disponibles en la <a href="http://sourceforge.net/project/showfiles.php?group_id=70742">SourceForge download page</a> de OpenClinic.
+    Dirk De Naegel has translated 0.6 and 0.7 versions to Dutch (nl_BE). Eric Tang has translated to traditional chinese (zh_TW BIG5) 0.7 version. Thank you very much to all of you. All of them are available at <a href="http://sourceforge.net/project/showfiles.php?group_id=70742">SourceForge download page</a>.
   </p>
 
   <p>
-    Os recordamos que podeis contribuir aportando nuevas traducciones. Aunque también de otras formas. En el apartado <a href="./participate.php">Participate</a> podeis consultar algunas de ellas.
+    We would like to remind you that you can keep on developing the project making new translations. Although there are also others ways. Inside <a href="./participate.php">Participate</a> you can check some of them.
   </p>
 
   <p class="sign">2005-04-10</p>

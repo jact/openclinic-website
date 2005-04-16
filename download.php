@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: download.php,v 1.3 2005/04/11 17:58:37 jact Exp $
+ * $Id: download.php,v 1.4 2005/04/16 15:15:19 jact Exp $
  */
 
 /**
@@ -58,18 +58,18 @@
 </div>
 
 <div class="notice">
-  <h2>Firmas de los archivos para comprobar su autenticidad</h2>
+  <h2>File signature to check its authenticity</h2>
 
   <p>
-    En la siguiente tabla os facilitamos las firmas de los archivos que se pueden descargar en formato md5. De esta forma podreis verificar su buen estado y atenticidad.
+    In the next table, we provide you the signatures of the files that can be downloaded in md5 format. This way you can its buen accuracy and authenticity.
   </p>
 
   <table>
     <thead>
       <tr>
-        <th>Archivo</th>
+        <th>File</th>
 
-        <th>Firma md5</th>
+        <th>md5 signature</th>
       </tr>
     </thead>
 
