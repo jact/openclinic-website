@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: footer.php,v 1.3 2005/04/16 18:34:40 jact Exp $
+ * $Id: footer.php,v 1.4 2005/09/07 17:00:34 jact Exp $
  */
 
 /**
@@ -84,9 +84,9 @@
 </div>
 
 <div id="footer">
-  <span class="left">Copyright &copy; 2002-2005 <a href="mailto:openclinic@gmail.com?subject=OpenClinic">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a></span>
+  <p id="copyright">Copyright &copy; 2002-2005 <a href="mailto:openclinic@gmail.com?subject=OpenClinic">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a></p>
 
-  <div class="right">Last modified: 2005-04-16</div>
+  <p id="date">Last modified: 2005-09-07</p>
 </div>
 </body>
 </html>
