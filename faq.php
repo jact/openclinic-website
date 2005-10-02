@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: faq.php,v 1.4 2005/04/16 18:32:14 jact Exp $
+ * $Id: faq.php,v 1.5 2005/10/02 15:50:41 jact Exp $
  */
 
 /**
@@ -131,7 +131,7 @@ $thead = array(
   </p>
 
   <p>
-     To fix this problem it is only necessary to delete the file <code>install/.htaccess</code>. This file is used in <a href="http://localhost/ocw/openclinic/index.php">DEMO version hosted in SourceForge</a> but in later versions it is not used at all. So from 0.7 version it is not available.
+     To fix this problem it is only necessary to delete the file <code>install/.htaccess</code>. This file is used in <a href="./openclinic/index.php">DEMO version hosted in SourceForge</a> but in later versions it is not used at all. So from 0.7 version it is not available.
   </p>
 
   <p class="sign">2005-04-04</p>
