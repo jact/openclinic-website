@@ -2,26 +2,26 @@
 /**
  * This file is part of OpenClinic Web Site
  *
- * Copyright (c) 2002-2005 jact
+ * Copyright (c) 2002-2006 jact
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: ocw_rss2.php,v 1.1 2005/04/16 18:35:43 jact Exp $
+ * $Id: ocw_rss2.php,v 1.2 2006/01/16 20:26:01 jact Exp $
  */
 
 /**
  * ocw_rss2.php
- ********************************************************************
+ *
  * Really Simple Syndication of OpenClinic Web Site (News and FAQ)
  * PHP 4 (uses domxml extension)
  * Does not work in PHP 5 (todo)
- ********************************************************************
+ *
  * Author: jact <openclinic@gmail.com>
  */
 
 /**
  * Functions:
- *  void appendNotices(DOMDocument &$element, array &$notices, string $category)
+ *  void appendNotices(DOMDocument &$element, array &$notices, string $category, string $page)
  */
 
   $author = utf8_encode('Jose Antonio Chavarría');
@@ -77,9 +77,10 @@
   );
 
   $channel->append_child($dom->create_comment('News category'));
-  appendNotices($channel, $news, 'News');
+  appendNotices($channel, $news, 'News', 'news.php');
 
   $faq = array( // guid_fragment => array(title, pubDate)
+    'deleting_patient_problem' => array('Deleting a medical problem or patient bug', date($format, mktime(21, 19, 10, 1, 16, 2006))),
     'medical_tests_problem' => array('Problem to see medical tests', date($format, mktime(20, 1, 3, 4, 10, 2005))),
     'translate_date_entries' => array('How to translate the date-relative entries', date($format, mktime(20, 15, 52, 4, 6, 2005))),
     'staff_member_header' => array('How to fix the Staff Member bug in 0.7 version', date($format, mktime(19, 57, 25, 4, 6, 2005))),
@@ -88,29 +89,30 @@
   );
 
   $channel->append_child($dom->create_comment('FAQ category'));
-  appendNotices($channel, $faq, 'FAQ');
+  appendNotices($channel, $faq, 'FAQ', 'faq.php');
 
-  header("Content-Type: text/xml");
+  header("Content-Type: application/rss+xml");
   echo $dom->dump_mem(true, 'ISO-8859-1');
 
 /**
- * void appendNotices(DOMDocument &$element, array &$notices, string $category)
- ********************************************************************
+ * void appendNotices(DOMDocument &$element, array &$notices, string $category, string $page)
+ *
  * Append items with notices to element node
- ********************************************************************
+ *
  * @param DOMDocument &$element
  * @param array &$notices
  * @param string $category
+ * @param string $page
  * @return void
  * @access public
  */
-function appendNotices(&$element, &$notices, $category)
+function appendNotices(&$element, &$notices, $category, $page)
 {
   global $host, $email, $dom;
 
   foreach ($notices as $key => $value)
   {
-    $link = $host . '/news.php#' . $key;
+    $link = $host . '/' . $page . '#' . $key;
     $item = $element->append_child($dom->create_element('item'));
 
     $e = $item->append_child($dom->create_element('title'));
