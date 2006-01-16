@@ -2,29 +2,29 @@
 /**
  * This file is part of OpenClinic Web Site
  *
- * Copyright (c) 2002-2005 jact
+ * Copyright (c) 2002-2006 jact
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: faq.php,v 1.5 2005/10/02 15:50:41 jact Exp $
+ * $Id: faq.php,v 1.6 2006/01/16 20:24:55 jact Exp $
  */
 
 /**
  * faq.php
- ********************************************************************
+ *
  * FAQ page
- ********************************************************************
+ *
  * Author: jact <openclinic@gmail.com>
  */
 
-  ////////////////////////////////////////////////////////////////////
-  // Controlling vars
-  ////////////////////////////////////////////////////////////////////
+  /**
+   * Controlling vars
+   */
   $nav = "faq";
 
-  ////////////////////////////////////////////////////////////////////
-  // Show page
-  ////////////////////////////////////////////////////////////////////
+  /**
+   * Show page
+   */
   $title = "FAQ";
   require_once("./header.php");
 ?>
@@ -35,6 +35,23 @@
   <p>
     We expect your questions at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">openclinic@gmail.com</a>!
   </p>
+</div>
+
+<div class="notice" id="deleting_patient_problem">
+  <h2>Deleting a medical problem or patient bug</h2>
+
+  <p>
+    In version 0.7 it happened an error when you try to delete a patient or a medical problem. It is caused by the lack of a field in the database. In order to solve this bug, it is necessary to execute the next <acronym>SQL</acronym> sentences with an user with permissions to alter the table structure:
+  </p>
+
+  <pre><code>
+mysql&gt; <strong>ALTER TABLE deleted_patient_tbl</strong>
+  -&gt;   <strong>ADD collegiate_number VARCHAR(20) AFTER id_member;</strong>
+mysql&gt; <strong>ALTER TABLE deleted_problem_tbl</strong>
+  -&gt;   <strong>ADD collegiate_number VARCHAR(20) AFTER id_member;</strong>
+  </code></pre>
+
+  <p class="sign">2006-01-16</p>
 </div>
 
 <div class="notice" id="medical_tests_problem">
