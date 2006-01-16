@@ -2,18 +2,18 @@
 /**
  * This file is part of OpenClinic Web Site
  *
- * Copyright (c) 2002-2005 jact
+ * Copyright (c) 2002-2006 jact
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: xhtml_start.php,v 1.3 2005/04/11 18:03:57 jact Exp $
+ * $Id: xhtml_start.php,v 1.4 2006/01/16 20:23:47 jact Exp $
  */
 
 /**
  * xhtml_start.php
- ********************************************************************
+ *
  * Contains the common XHTML content of the web pages (XML prolog, DOCTYPE, title page and meta data)
- ********************************************************************
+ *
  * Author: jact <openclinic@gmail.com>
  */
 
@@ -76,11 +76,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
 <head>
 <title><?php
-  echo "OpenClinic Project";
   if (isset($title) && !empty($title))
   {
-    echo " : " . $title;
+    echo $title . " : ";
   }
+  echo "OpenClinic Project";
 ?></title>
 <?php
   if ( !$xhtml )
@@ -101,4 +101,4 @@
 
 <meta name="author" content="Jose Antonio Chavarría" />
 
-<meta name="copyright" content="2002-2005 Jose Antonio Chavarría" />
+<meta name="copyright" content="2002-2006 Jose Antonio Chavarría" />
