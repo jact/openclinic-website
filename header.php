@@ -2,18 +2,18 @@
 /**
  * This file is part of OpenClinic Web Site
  *
- * Copyright (c) 2002-2005 jact
+ * Copyright (c) 2002-2006 jact
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: header.php,v 1.4 2005/04/16 18:33:02 jact Exp $
+ * $Id: header.php,v 1.5 2006/01/16 20:24:18 jact Exp $
  */
 
 /**
  * header.php
- ********************************************************************
+ *
  * Contains the common header of the web pages
- ********************************************************************
+ *
  * Author: jact <openclinic@gmail.com>
  */
 
@@ -23,9 +23,9 @@
     exit();
   }
 
-  ////////////////////////////////////////////////////////////////////
-  // XHTML Start (XML prolog, DOCTYPE, title page and meta data)
-  ////////////////////////////////////////////////////////////////////
+  /**
+   * XHTML Start (XML prolog, DOCTYPE, title page and meta data)
+   */
   require_once("./xhtml_start.php");
 ?>
 
