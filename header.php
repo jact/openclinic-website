@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: header.php,v 1.5 2006/01/16 20:24:18 jact Exp $
+ * $Id: header.php,v 1.6 2006/02/12 18:02:56 jact Exp $
  */
 
 /**
@@ -35,7 +35,7 @@
 
 <link rel="shortcut icon" type="image/png" href="./i/miniopc.png" />
 
-<!--link rel="bookmark icon" type="image/ico" href="./favicon.ico" /-->
+<link rel="bookmark icon" type="image/png" href="./i/miniopc.png" />
 
 <link href="./c/openclinic.css" type="text/css" rel="stylesheet" title="OpenClinic Web Site" />
 
@@ -43,17 +43,17 @@
 </head>
 <body>
 <div id="heading">
-  <div id="homePage">
+  <p id="homePage">
     <a href="./index.php" title="Home page"><img id="logo" src="./i/openclinic_logo.png" width="291" height="58" alt="Home page" /></a>
-  </div>
+  </p>
 
-  <div id="shortcuts">
-    <a href="http://sourceforge.net/project/showfiles.php?group_id=70742" title="Shortcut to SourceForge download page"><img src="./i/dumps.png" width="36" height="36" title="Download" alt="Download" />Download</a>
+  <ul id="shortcuts">
+    <li><a href="http://sourceforge.net/project/showfiles.php?group_id=70742" title="Shortcut to SourceForge download page"><img src="./i/dumps.png" width="36" height="36" title="Download" alt="Download" />Download</a></li>
 
-    <a href="./openclinic/index.php" title="Shortcut to demo version"><img src="./i/users.png" width="36" height="36" title="Demo" alt="Demo" />Demo</a>
+    <li><a href="./openclinic/index.php" title="Shortcut to demo version"><img src="./i/users.png" width="36" height="36" title="Demo" alt="Demo" />Demo</a></li>
 
-    <a href="./faq.php"><img src="./i/logs.png" width="36" height="36" title="FAQ" alt="FAQ" />FAQ</a>
-  </div>
+    <li><a href="./faq.php"><img src="./i/logs.png" width="36" height="36" title="FAQ" alt="FAQ" />FAQ</a></li>
+  </ul>
 </div>
 
 <hr />
