@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: xhtml_start.php,v 1.4 2006/01/16 20:23:47 jact Exp $
+ * $Id: xhtml_start.php,v 1.5 2006/02/12 18:05:13 jact Exp $
  */
 
 /**
@@ -23,9 +23,23 @@
     exit();
   }
 
-  define("OPEN_CHARSET",  "ISO-8859-1");
-  define("OPEN_ENCODING", "ISO-8859-1");
-  define("OPEN_BUFFER",   false); // @fixme footer.php missing (by now)
+  define("OPEN_CHARSET",  "UTF-8");
+  define("OPEN_ENCODING", "UTF-8");
+  define("OPEN_BUFFER",   true);
+
+  /**
+   * string _convert2Utf8(string $buffer)
+   *
+   * Callback function for ob_start
+   *
+   * @param string $buffer
+   * @return string $buffer ut8 converted
+   * @access private
+   */
+  function _convert2Utf8($buffer)
+  {
+    return utf8_encode($buffer);
+  }
 
   /**
    * Content negotiation
@@ -55,13 +69,13 @@
 
   if (defined("OPEN_BUFFER") && OPEN_BUFFER)
   {
-    if (eregi("gzip", $_SERVER['HTTP_ACCEPT_ENCODING']))
+    /*if (eregi("gzip", $_SERVER['HTTP_ACCEPT_ENCODING']))
     {
       ob_start("ob_gzhandler");
     }
-    else
+    else*/
     {
-      ob_start();
+      ob_start("_convert2Utf8");
     }
   }
 
@@ -75,6 +89,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
 <head>
+<?php
+  //if ( !$xhtml )
+  {
+    echo "\n" . '<meta http-equiv="Content-Type" content="' . $contentType . '" />' . "\n";
+  }
+?>
+
 <title><?php
   if (isset($title) && !empty($title))
   {
@@ -82,12 +103,6 @@
   }
   echo "OpenClinic Project";
 ?></title>
-<?php
-  if ( !$xhtml )
-  {
-    echo "\n" . '<meta http-equiv="Content-Type" content="' . $contentType . '" />' . "\n";
-  }
-?>
 
 <meta http-equiv="imagetoolbar" content="no" />
 
