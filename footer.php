@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: footer.php,v 1.5 2006/01/16 20:23:02 jact Exp $
+ * $Id: footer.php,v 1.6 2006/02/12 18:01:50 jact Exp $
  */
 
 /**
@@ -40,7 +40,7 @@
     <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><span class="w3c">W3C</span> <span class="spec">CSS2</span></a>
   </p>
 
-  <p class="w3cButton">
+  <p class="w3cButton" id="rss">
     <a href="./ocw_rss2.php" title="Really Simple Syndication 2.0 (News &amp; FAQ sections)"><span class="w3c">RSS</span> <span class="spec">2.0</span></a>
   </p>
 </div>
@@ -86,7 +86,13 @@
 <div id="footer">
   <p id="copyright">Copyright &copy; 2002-2006 <a href="mailto:openclinic@gmail.com?subject=OpenClinic">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a></p>
 
-  <p id="date">Last modified: 2006-01-16</p>
+  <p id="date">Last modified: 2006-02-12</p>
 </div>
 </body>
 </html>
+<?php
+  if (defined("OPEN_BUFFER") && OPEN_BUFFER)
+  {
+    ob_end_flush();
+  }
+?>
