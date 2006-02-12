@@ -6,7 +6,7 @@
  * Licensed under the Creative Commons License.
  * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
  *
- * $Id: ocw_rss2.php,v 1.2 2006/01/16 20:26:01 jact Exp $
+ * $Id: ocw_rss2.php,v 1.3 2006/02/12 18:05:53 jact Exp $
  */
 
 /**
@@ -92,7 +92,7 @@
   appendNotices($channel, $faq, 'FAQ', 'faq.php');
 
   header("Content-Type: application/rss+xml");
-  echo $dom->dump_mem(true, 'ISO-8859-1');
+  echo $dom->dump_mem(true, 'UTF-8');
 
 /**
  * void appendNotices(DOMDocument &$element, array &$notices, string $category, string $page)
