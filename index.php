@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: index.php,v 1.3 2009/01/06 15:02:45 David Bowman Exp $
+ * @version   CVS: $Id: index.php,v 1.4 2009/01/06 21:23:18 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -31,8 +31,6 @@
   <p>
     OpenClinic is an easy to use, open source, medical records system written in <a href="http://www.php.net"><acronym title="PHP: Hypertext Preprocessor">PHP</acronym></a>. It has been mainly thougth for private clinics, surgeries and private doctors. It is platform independent and it has multilanguage architecture.
   </p>
-
-  <hr />
 
   <p>
     Currently, OpenClinic has the following options:
@@ -79,9 +77,7 @@
       </ul>
     </li>
   </ul>
-</div>
 
-<div class="notice">
   <h2>Requirements</h2>
 
   <ul>
@@ -93,9 +89,7 @@
 
     <li>and, of course, a web browser (with JavaScript and good <acronym title="Cascading Style Sheet level 2">CSS2</acronym> support). We recommend <a href="http://www.opera.com/">Opera</a> or <a href="http://www.mozilla.org/">Firefox</a>.</li>
   </ul>
-</div>
 
-<div class="notice">
   <h2>Features</h2>
 
   <dl>
