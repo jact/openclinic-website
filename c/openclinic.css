@@ -8,7 +8,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: openclinic.css,v 1.5 2009/01/06 15:10:32 David Bowman Exp $
+ * @version   CVS: $Id: openclinic.css,v 1.6 2009/01/06 21:23:58 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -115,7 +115,7 @@ hr#separator {
 .notice li {
   margin-bottom: 8px;
 }
-code, code del {
+code, code ins, code del, code strong, var {
   font-family: "Lucida Sans Typewriter", "Courier New", monospace;
 }
 var {
@@ -253,7 +253,7 @@ a img {
   display: block;
   width: 100%;
 }
-.w3c_button a:link, .w3cButton a:visited, .w3cButton a:hover {
+.w3c_button a:link, .w3c_button a:visited, .w3c_button a:hover {
   background: #fc6;
   color: #000;
   text-decoration: none;
