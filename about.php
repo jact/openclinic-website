@@ -1,31 +1,27 @@
 <?php
 /**
- * This file is part of OpenClinic Web Site
- *
- * Copyright (c) 2002-2005 jact
- * Licensed under the Creative Commons License.
- * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
- *
- * $Id: about.php,v 1.2 2005/04/11 17:57:24 jact Exp $
- */
-
-/**
  * about.php
- ********************************************************************
+ *
  * About page
- ********************************************************************
- * Author: jact <openclinic@gmail.com>
+ *
+ * Licensed under the Creative Commons License
+ *
+ * @package   OpenClinic Web Site
+ * @copyright 2002-2009 jact
+ * @license   http://creativecommons.org/licenses/by/2.0/
+ * @version   CVS: $Id: about.php,v 1.3 2009/01/06 15:00:49 David Bowman Exp $
+ * @author    jact <openclinic@gmail.com>
  */
 
-  ////////////////////////////////////////////////////////////////////
-  // Controlling vars
-  ////////////////////////////////////////////////////////////////////
+  /**
+   * Controlling vars
+   */
   $nav = "about";
-
-  ////////////////////////////////////////////////////////////////////
-  // Show page
-  ////////////////////////////////////////////////////////////////////
   $title = "About";
+
+  /**
+   * Show page
+   */
   require_once("./header.php");
 ?>
 
@@ -37,15 +33,13 @@
   </p>
 
   <p>
-    This site is designed to the lastest generation browsers like <a href="http://www.mozilla.org/">Mozilla</a> or <a href="http://www.mozilla.org/products/firefox/">Firefox</a>. In <acronym title="Microsoft Internet Explorer">MSIE</acronym> is possible that you cannot see it properly.
+    This site is designed to the lastest generation browsers like <a href="http://www.opera.com/">Opera</a> or <a href="http://www.mozilla.org/products/firefox/">Firefox</a>. In <acronym title="Microsoft Internet Explorer">MSIE</acronym> is possible that you cannot see it properly.
   </p>
 
   <p>
-    You can email your suggestions about this site or this project at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">openclinic@gmail.com</a>.
+    You can email your suggestions about this site or this project at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">&lt;openclinic at gmail dot com&gt;</a>.
   </p>
-</div>
 
-<div class="notice">
   <h2>Developers information</h2>
 
   <dl>
@@ -95,9 +89,7 @@
       </ul>
     </dd>
   </dl>
-</div>
 
-<div class="notice">
   <h2>Farewell</h2>
 
   <p>

@@ -1,31 +1,27 @@
 <?php
 /**
- * This file is part of OpenClinic Web Site
- *
- * Copyright (c) 2002-2005 jact
- * Licensed under the Creative Commons License.
- * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
- *
- * $Id: index.php,v 1.2 2005/04/11 18:02:02 jact Exp $
- */
-
-/**
  * index.php
- ********************************************************************
+ *
  * Home page
- ********************************************************************
- * Author: jact <openclinic@gmail.com>
+ *
+ * Licensed under the Creative Commons License
+ *
+ * @package   OpenClinic Web Site
+ * @copyright 2002-2009 jact
+ * @license   http://creativecommons.org/licenses/by/2.0/
+ * @version   CVS: $Id: index.php,v 1.3 2009/01/06 15:02:45 David Bowman Exp $
+ * @author    jact <openclinic@gmail.com>
  */
 
-  ////////////////////////////////////////////////////////////////////
-  // Controlling vars
-  ////////////////////////////////////////////////////////////////////
+  /**
+   * Controlling vars
+   */
   $nav = "home";
-
-  ////////////////////////////////////////////////////////////////////
-  // Show page
-  ////////////////////////////////////////////////////////////////////
   $title = "Home page";
+
+  /**
+   * Show page
+   */
   require_once("./header.php");
 ?>
 
@@ -89,34 +85,41 @@
   <h2>Requirements</h2>
 
   <ul>
-    <li><a href="http://www.php.net/">PHP4</a> &gt;= 4.2 (due to session variable changes in PHP 4.2) compiled with MySQL support (tested with versions 4.2.x and 4.3.x);</li>
+    <li><a href="http://www.php.net/">PHP4</a> &gt;= 4.2 (due to session variable changes in PHP 4.2) compiled with MySQL support (tested with versions 4.2.x, 4.3.x and 4.4.x);</li>
 
-    <li><a href="http://www.mysql.com/">MySQL</a> (tested with versions 3.23.36, 3.23.49, 3.23.51, 3.23.52, 3.23.54, 3.23.55, 4.0.16 and 4.0.18);</li>
+    <li><a href="http://www.mysql.com/">MySQL</a> (tested with versions 3.23.36, 3.23.49, 3.23.51, 3.23.52, 3.23.54, 3.23.55, 4.0.16, 4.0.18 and 4.0.26);</li>
 
     <li>a web server prepared to execute <acronym title="PHP: Hypertext Preprocessor">PHP</acronym> code (like <a href="http://httpd.apache.org/">Apache</a>);</li>
 
-    <li>and, of course, a web browser (with JavaScript and good <acronym title="Cascading Style Sheet level 2">CSS2</acronym> support). We recommend <a href="http://www.mozilla.org/">Mozilla</a> or <a href="http://www.mozilla.org/products/firefox/">FireFox</a>.</li>
+    <li>and, of course, a web browser (with JavaScript and good <acronym title="Cascading Style Sheet level 2">CSS2</acronym> support). We recommend <a href="http://www.opera.com/">Opera</a> or <a href="http://www.mozilla.org/">Firefox</a>.</li>
   </ul>
 </div>
 
 <div class="notice">
   <h2>Features</h2>
 
-  <ul>
-    <li><strong>Environment:</strong> Web Environment</li>
+  <dl>
+    <dt>Environment</dt>
+    <dd>Web Environment</dd>
 
-    <li><strong>Intended Audience:</strong> Education, Healthcare industry</li>
+    <dt>Intended Audience</dt>
+    <dd>Education, Healthcare industry</dd>
 
-    <li><strong>License:</strong> <a href="./openclinic/LICENSE">GNU General Public License (GPL)</a></li>
+    <dt>License</dt>
+    <dd><a href="./openclinic/LICENSE">GNU General Public License (GPL)</a></dd>
 
-    <li><strong>Language:</strong> English (all versions), Spanish (all versions), Bulgarian (from 0.3 to 0.5 version, both included), Dutch (0.6 and 0.7 versions), Traditional Chinese (0.7 version)</li>
+    <dt>Language</dt>
+    <dd>English (all versions), Spanish (all versions), Bulgarian (from 0.3 to 0.5 version, both included), Dutch (0.6 and 0.7 versions), Traditional Chinese (0.7 version)</dd>
 
-    <li><strong>Operating System:</strong> OS Independent</li>
+    <dt>Operating System</dt>
+    <dd>OS Independent</dd>
 
-    <li><strong>Programming Language:</strong> <a href="http://www.php.net">PHP</a>, <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript</a></li>
+    <dt>Programming Language</dt>
+    <dd><a href="http://www.php.net">PHP</a>, <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">JavaScript</a></dd>
 
-    <li><strong>Topic:</strong> Dynamic Content</li>
-  </ul>
+    <dt>Topic</dt>
+    <dd>Dynamic Content</dd>
+  </dl>
 </div>
 
 <?php

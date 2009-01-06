@@ -1,31 +1,27 @@
 <?php
 /**
- * This file is part of OpenClinic Web Site
- *
- * Copyright (c) 2002-2005 jact
- * Licensed under the Creative Commons License.
- * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
- *
- * $Id: download.php,v 1.4 2005/04/16 15:15:19 jact Exp $
- */
-
-/**
  * download.php
- ********************************************************************
+ *
  * Download explanations page
- ********************************************************************
- * Author: jact <openclinic@gmail.com>
+ *
+ * Licensed under the Creative Commons License
+ *
+ * @package   OpenClinic Web Site
+ * @copyright 2002-2009 jact
+ * @license   http://creativecommons.org/licenses/by/2.0/
+ * @version   CVS: $Id: download.php,v 1.5 2009/01/06 15:01:45 David Bowman Exp $
+ * @author    jact <openclinic@gmail.com>
  */
 
-  ////////////////////////////////////////////////////////////////////
-  // Controlling vars
-  ////////////////////////////////////////////////////////////////////
+  /**
+   * Controlling vars
+   */
   $nav = "download";
-
-  ////////////////////////////////////////////////////////////////////
-  // Show page
-  ////////////////////////////////////////////////////////////////////
   $title = "Download";
+
+  /**
+   * Show page
+   */
   require_once("./header.php");
 ?>
 
@@ -35,17 +31,13 @@
   <p>
     All OpenClinic versions can be found at <a href="http://sourceforge.net/project/showfiles.php?group_id=70742">SourceForge download page</a>. You can also find there the documents attached to the project.
   </p>
-</div>
 
-<div class="notice">
   <h2>What is CSHC-DSS?</h2>
 
   <p>
     This project explains how the environment must be set where OpenClinic is to be on production. It is included different aspects: from the choice of operative system to how it must be set to be a web server and database.
   </p>
-</div>
 
-<div class="notice">
   <h2>What is CSHC-DI?</h2>
 
   <p>
@@ -55,13 +47,11 @@
   <p>
     All available documentation to download (0.1 version) is for 0.6 version of OpenClinic. Right now it has been upgrading to fit 0.7 version.
   </p>
-</div>
 
-<div class="notice">
   <h2>File signature to check its authenticity</h2>
 
   <p>
-    In the next table, we provide you the signatures of the files that can be downloaded in md5 format. This way you can its buen accuracy and authenticity.
+    In the next table, we provide you the signatures of the files that can be downloaded in md5 format. This way you can its good accuracy and authenticity.
   </p>
 
   <table>

@@ -1,31 +1,28 @@
 <?php
 /**
- * This file is part of OpenClinic Web Site
- *
- * Copyright (c) 2002-2005 jact
- * Licensed under the Creative Commons License.
- * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
- *
- * $Id: participate.php,v 1.2 2005/04/11 18:03:46 jact Exp $
- */
-
-/**
  * participate.php
- ********************************************************************
+ *
  * Participate page
- ********************************************************************
- * Author: jact <openclinic@gmail.com>
+ *
+ * Licensed under the Creative Commons License
+ *
+ * @package   OpenClinic Web Site
+ * @copyright 2002-2009 jact
+ * @license   http://creativecommons.org/licenses/by/2.0/
+ * @version   CVS: $Id: participate.php,v 1.3 2009/01/06 15:03:35 David Bowman Exp $
+ * @author    jact <openclinic@gmail.com>
+ * @todo      change HTML scheme and review participation modes
  */
 
-  ////////////////////////////////////////////////////////////////////
-  // Controlling vars
-  ////////////////////////////////////////////////////////////////////
+  /**
+   * Controlling vars
+   */
   $nav = "participate";
-
-  ////////////////////////////////////////////////////////////////////
-  // Show page
-  ////////////////////////////////////////////////////////////////////
   $title = "Participate";
+
+  /**
+   * Show page
+   */
   require_once("./header.php");
 ?>
 
@@ -43,17 +40,13 @@
 
     <li>Testing application and reporting bugs.</li>
   </ul>
-</div>
 
-<div class="notice">
   <h2>Multilingual support</h2>
 
   <p>
     OpenClinic offers multilingual support, based in <a href="http://www.gnu.org/manual/gettext/index.html">gettext</a>. So anyone who wants to contribute to language, can create a new .po file (portable object) and enjoy his/her own language. Every language that it is sent to me will be included in the next version and will be released as language pack.
   </p>
-</div>
 
-<div class="notice">
   <h2>HTML scheme</h2>
 
   <p>
