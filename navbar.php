@@ -1,20 +1,16 @@
 <?php
 /**
- * This file is part of OpenClinic Web Site
- *
- * Copyright (c) 2002-2005 jact
- * Licensed under the Creative Commons License.
- * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
- *
- * $Id: navbar.php,v 1.2 2005/04/11 18:02:17 jact Exp $
- */
-
-/**
  * navbar.php
- ********************************************************************
+ *
  * Contains the left side menu navigation links
- ********************************************************************
- * Author: jact <openclinic@gmail.com>
+ *
+ * Licensed under the Creative Commons License
+ *
+ * @package   OpenClinic Web Site
+ * @copyright 2002-2009 jact
+ * @license   http://creativecommons.org/licenses/by/2.0/
+ * @version   CVS: $Id: navbar.php,v 1.3 2009/01/06 15:04:06 David Bowman Exp $
+ * @author    jact <openclinic@gmail.com>
  */
 
   if (str_replace("\\", "/", __FILE__) == $_SERVER['SCRIPT_FILENAME'])

@@ -1,31 +1,27 @@
 <?php
 /**
- * This file is part of OpenClinic Web Site
- *
- * Copyright (c) 2002-2006 jact
- * Licensed under the Creative Commons License.
- * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
- *
- * $Id: faq.php,v 1.6 2006/01/16 20:24:55 jact Exp $
- */
-
-/**
  * faq.php
  *
  * FAQ page
  *
- * Author: jact <openclinic@gmail.com>
+ * Licensed under the Creative Commons License
+ *
+ * @package   OpenClinic Web Site
+ * @copyright 2002-2009 jact
+ * @license   http://creativecommons.org/licenses/by/2.0/
+ * @version   CVS: $Id: faq.php,v 1.7 2009/01/06 15:02:17 David Bowman Exp $
+ * @author    jact <openclinic@gmail.com>
  */
 
   /**
    * Controlling vars
    */
   $nav = "faq";
+  $title = "FAQ";
 
   /**
    * Show page
    */
-  $title = "FAQ";
   require_once("./header.php");
 ?>
 
@@ -33,7 +29,7 @@
   <h1>FAQ</h1>
 
   <p>
-    We expect your questions at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">openclinic@gmail.com</a>!
+    We expect your questions at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">openclinic at gmail dot com</a>!
   </p>
 </div>
 
@@ -62,7 +58,7 @@ mysql&gt; <strong>ALTER TABLE deleted_problem_tbl</strong>
   </p>
 
   <ul>
-    <li>The filenames of medical tests must be respect the guidelines shown in the section <q>Code Files Format</q> inside the document <a href="http://openclinic.sf.net/openclinic/coding_guidelines.html">Coding Guidelines</a></li>
+    <li>The filenames of medical tests must be respect the guidelines shown in the section <q>Code Files Format</q> inside the document <a href="http://openclinic.sf.net/openclinic/coding_guidelines.html">Coding Guidelines</a>.</li>
 
     <li>
       Edit <code>medical/test_list.php</code> and remove the line:

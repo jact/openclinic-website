@@ -1,31 +1,27 @@
 <?php
 /**
- * This file is part of OpenClinic Web Site
- *
- * Copyright (c) 2002-2005 jact
- * Licensed under the Creative Commons License.
- * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
- *
- * $Id: demo.php,v 1.2 2005/04/11 17:57:51 jact Exp $
- */
-
-/**
  * demo.php
- ********************************************************************
+ *
  * Demo explanations page
- ********************************************************************
- * Author: jact <openclinic@gmail.com>
+ *
+ * Licensed under the Creative Commons License
+ *
+ * @package   OpenClinic Web Site
+ * @copyright 2002-2009 jact
+ * @license   http://creativecommons.org/licenses/by/2.0/
+ * @version   CVS: $Id: demo.php,v 1.3 2009/01/06 15:01:26 David Bowman Exp $
+ * @author    jact <openclinic@gmail.com>
  */
 
-  ////////////////////////////////////////////////////////////////////
-  // Controlling vars
-  ////////////////////////////////////////////////////////////////////
+  /**
+   * Controlling vars
+   */
   $nav = "demo";
-
-  ////////////////////////////////////////////////////////////////////
-  // Show page
-  ////////////////////////////////////////////////////////////////////
   $title = "Demo";
+
+  /**
+   * Show page
+   */
   require_once("./header.php");
 ?>
 
@@ -33,7 +29,8 @@
   <h1>About Demo version</h1>
 
   <p>
-    Some failures can appear in the pages, because what can be seen in the <a href="./openclinic/index.php">DEMO version</a> that you are executing is usually also a development version. We apologize for the annoyance.  </p>
+    Some failures can appear in the pages, because what can be seen in the <a href="./openclinic/index.php">DEMO version</a> that you are executing is usually also a development version. We apologize for the annoyance.
+  </p>
 
   <hr />
 

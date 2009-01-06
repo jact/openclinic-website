@@ -1,20 +1,16 @@
 <?php
 /**
- * This file is part of OpenClinic Web Site
- *
- * Copyright (c) 2002-2006 jact
- * Licensed under the Creative Commons License.
- * For full terms see the URL http://creativecommons.org/licenses/by/2.0/.
- *
- * $Id: xhtml_start.php,v 1.5 2006/02/12 18:05:13 jact Exp $
- */
-
-/**
  * xhtml_start.php
  *
  * Contains the common XHTML content of the web pages (XML prolog, DOCTYPE, title page and meta data)
  *
- * Author: jact <openclinic@gmail.com>
+ * Licensed under the Creative Commons License
+ *
+ * @package   OpenClinic Web Site
+ * @copyright 2002-2009 jact
+ * @license   http://creativecommons.org/licenses/by/2.0/
+ * @version   CVS: $Id: xhtml_start.php,v 1.6 2009/01/06 15:03:52 David Bowman Exp $
+ * @author    jact <openclinic@gmail.com>
  */
 
   if (str_replace("\\", "/", __FILE__) == $_SERVER['SCRIPT_FILENAME'])
@@ -116,4 +112,4 @@
 
 <meta name="author" content="Jose Antonio Chavarría" />
 
-<meta name="copyright" content="2002-2006 Jose Antonio Chavarría" />
+<meta name="copyright" content="2002-<?php echo date("Y"); ?> Jose Antonio Chavarría" />
