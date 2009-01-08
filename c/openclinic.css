@@ -8,7 +8,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: openclinic.css,v 1.6 2009/01/06 21:23:58 David Bowman Exp $
+ * @version   CVS: $Id: openclinic.css,v 1.7 2009/01/08 17:58:10 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -28,40 +28,49 @@ html, body {
   border-bottom: 6px solid #000;
 }
 #home_page {
-  width: 291px;
+  width: 30%;
+  margin-left: -100%;
 }
 #logo {
   display: block; /* deactivate image gap in Gecko browsers */
 }
 #shortcuts {
-  position: absolute;
-  top: 6px;
-  right: 10px;
+  width: 70%;
+  margin-left: -70%;
+  margin-top: 20px;
   text-align: right;
 }
 #shortcuts li {
   display: inline;
 }
 #shortcuts a {
-  padding: 0 20px;
-  text-decoration: none;
+  padding: 20px 30px 20px 50px;
   font-weight: bold;
 }
-#shortcuts a img {
-  vertical-align: middle;
-  margin-right: 4px;
+html>body a#download {
+  background: #fff url(../i/download.png) no-repeat left center;
 }
-hr {
+html>body a#demo {
+  background: #fff url(../i/demo.png) no-repeat left center;
+}
+html>body a#faq {
+  background: #fff url(../i/faq.png) no-repeat left center;
+  padding-right: 10px;
+}
+hr, li#skip, #navigation h3 {
   display: none;
+  visibility: hidden;
 }
 hr#separator {
   display: block;
+  visibility: visible;
   border: 1px solid #fff;
   color: #fff;
   background: #fff;
   margin: 0;
   padding: 0;
 }
+/* View http://alisapart.com/articles/fauxabsolutepositioning */
 .line {
   float: left;
   width: 100%;
@@ -121,9 +130,6 @@ code, code ins, code del, code strong, var {
 var {
   font-weight: bold;
   font-style: normal;
-}
-#navigation h3 {
-  display: none;
 }
 #footer {
   clear: both;
@@ -213,6 +219,7 @@ html>body #navigation ul li a {
 }
 #extra hr {
   display: block;
+  visibility: visible;
   margin: 4px 6px;
   background: #bbb;
   color: #bbb;
@@ -220,6 +227,7 @@ html>body #navigation ul li a {
 }
 #content hr {
   display: block;
+  visibility: visible;
   background: #CED3DE;
   color: #CED3DE;
   border: 1px solid #CED3DE;
