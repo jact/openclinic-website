@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: header.php,v 1.7 2009/01/06 15:05:33 David Bowman Exp $
+ * @version   CVS: $Id: header.php,v 1.8 2009/01/08 17:55:57 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -42,21 +42,23 @@
 </head>
 <body>
 <div id="wrap">
-  <div id="header">
-    <p id="home_page">
-      <a href="./index.php" title="Home page"><img id="logo" src="./i/openclinic_logo.png" width="291" height="58" alt="Home page" /></a>
+  <div id="header" class="line">
+    <p id="home_page" class="item">
+      <a href="./index.php" title="Home page" accesskey="1"><img id="logo" src="./i/openclinic_logo.png" width="291" height="58" alt="Home page" /></a>
     </p>
 
-    <ul id="shortcuts">
-      <li><a href="http://sourceforge.net/project/showfiles.php?group_id=70742" title="Shortcut to SourceForge download page"><img src="./i/download.png" width="48" height="48" title="Download" alt="Download" />Download</a></li>
+    <ul id="shortcuts" class="item">
+      <li id="skip"><a href="#navigation" accesskey="2">Skip to navigation links</a></li>
 
-      <li><a href="./openclinic/index.php" title="Shortcut to demo version"><img src="./i/demo.png" width="48" height="48" title="Demo" alt="Demo" />Demo</a></li>
+      <li><a href="http://sourceforge.net/project/showfiles.php?group_id=70742" title="Shortcut to SourceForge download page" id="download">Download</a></li>
 
-      <li><a href="./faq.php"><img src="./i/faq.png" width="48" height="48" title="FAQ" alt="FAQ" />FAQ</a></li>
+      <li><a href="./openclinic/index.php" title="Shortcut to demo version" id="demo">Demo</a></li>
+
+      <li><a href="./faq.php" id="faq">FAQ</a></li>
     </ul>
   </div>
 
-  <hr id="separator" />
+  <hr id="separator" class="line" />
 
   <div id="main" class="line">
     <div id="content" class="item">
