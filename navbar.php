@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: navbar.php,v 1.3 2009/01/06 15:04:06 David Bowman Exp $
+ * @version   CVS: $Id: navbar.php,v 1.4 2009/01/10 14:39:00 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -19,11 +19,11 @@
     exit();
   }
 
-  echo "<ul>\n";
+  echo '<ul id="navbar">' . "\n";
 
   echo ($nav == "home")
-    ? '<li title="You are here"><strong>' . "Home" . '</strong>'
-    : '<li><a href="./index.php">' . "Home" . '</a>';
+    ? '<li title="You are here"><strong>' . "What is OpenClinic?" . '</strong>'
+    : '<li><a href="./index.php">' . "What is OpenClinic?" . '</a>';
   echo "</li>\n";
 
   echo ($nav == "news")
