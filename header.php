@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: header.php,v 1.8 2009/01/08 17:55:57 David Bowman Exp $
+ * @version   CVS: $Id: header.php,v 1.9 2009/01/10 14:29:49 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -43,9 +43,9 @@
 <body>
 <div id="wrap">
   <div id="header" class="line">
-    <p id="home_page" class="item">
-      <a href="./index.php" title="Home page" accesskey="1"><img id="logo" src="./i/openclinic_logo.png" width="291" height="58" alt="Home page" /></a>
-    </p>
+    <h1 id="home_page" class="item mir">
+      <a href="./index.php" title="Home page" accesskey="1">OpenClinic Project</a>
+    </h1>
 
     <ul id="shortcuts" class="item">
       <li id="skip"><a href="#navigation" accesskey="2">Skip to navigation links</a></li>
@@ -54,11 +54,11 @@
 
       <li><a href="./openclinic/index.php" title="Shortcut to demo version" id="demo">Demo</a></li>
 
-      <li><a href="./faq.php" id="faq">FAQ</a></li>
+      <li><a href="./faq.php" id="faq" title="Shortcut to Frequently Answers &amp; Questions">FAQ</a></li>
     </ul>
   </div>
 
-  <hr id="separator" class="line" />
+  <hr />
 
   <div id="main" class="line">
     <div id="content" class="item">
