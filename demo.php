@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: demo.php,v 1.3 2009/01/06 15:01:26 David Bowman Exp $
+ * @version   CVS: $Id: demo.php,v 1.4 2009/01/10 14:33:26 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -26,19 +26,15 @@
 ?>
 
 <div class="notice">
-  <h1>About Demo version</h1>
+  <h2>About Demo version</h2>
 
   <p>
     Some failures can appear in the pages, because what can be seen in the <a href="./openclinic/index.php">DEMO version</a> that you are executing is usually also a development version. We apologize for the annoyance.
   </p>
 
-  <hr />
-
   <p>
     A document can be found to check the <a href="./openclinic/demo_version.html"> new features of the DEMO version</a>. We recommend reading it before running the DEMO version.
   </p>
-
-  <hr />
 
   <p>
     We would like to thank everybody for visiting the <a href="./openclinic/index.php">DEMO version</a> and also thank everybody that have worked looking for data to test (all data should be bogus...).
