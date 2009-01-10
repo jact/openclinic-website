@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: about.php,v 1.3 2009/01/06 15:00:49 David Bowman Exp $
+ * @version   CVS: $Id: about.php,v 1.4 2009/01/10 14:32:47 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -26,7 +26,7 @@
 ?>
 
 <div class="notice">
-  <h1>About</h1>
+  <h2>About</h2>
 
   <p>
     OpenClinic logo is made by <a href="http://www.coresis.com/">Coresis</a>. Thanks a lot.
@@ -40,7 +40,7 @@
     You can email your suggestions about this site or this project at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">&lt;openclinic at gmail dot com&gt;</a>.
   </p>
 
-  <h2>Developers information</h2>
+  <h3>Developers information</h3>
 
   <dl>
     <dt>[jact] - Jose Antonio Chavarría <strong>&lt;openclinic at gmail dot com&gt;</strong></dt>
@@ -90,7 +90,7 @@
     </dd>
   </dl>
 
-  <h2>Farewell</h2>
+  <h3>Farewell</h3>
 
   <p>
     Please, enjoy OpenClinic and remember that this is free <acronym title="GNU General Public License">GPL</acronym> software and comes without any warranty and without technical support.

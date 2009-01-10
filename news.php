@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: news.php,v 1.5 2009/01/06 15:03:20 David Bowman Exp $
+ * @version   CVS: $Id: news.php,v 1.6 2009/01/10 14:36:40 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -26,7 +26,7 @@
 ?>
 
 <div class="notice" id="email_change">
-  <h1>New mail address project</h1>
+  <h2>New mail address project</h2>
 
   <p>
     We have changed our mail address to get more space and better service to send mails (we have had many problems in this subject using the current mail address). The new mail address to contact us is <strong>&lt;openclinic at gmail dot com&gt;</strong>. Please do not sent any mail to the formes address. We have had too many problems until today.
@@ -40,7 +40,7 @@
 </div>
 
 <div class="notice" id="new_language_packs">
-  <h1>New language packs released</h1>
+  <h2>New language packs released</h2>
 
   <p>
     Dirk De Naegel has translated 0.6 and 0.7 versions to Dutch (nl_BE). Eric Tang has translated to traditional chinese (zh_TW BIG5) 0.7 version. Thank you very much to all of you. All of them are available at <a href="http://sourceforge.net/project/showfiles.php?group_id=70742">SourceForge download page</a>.
@@ -54,7 +54,7 @@
 </div>
 
 <div class="notice" id="released_0_7">
-  <h1>OpenClinic 0.7 released!</h1>
+  <h2>OpenClinic 0.7 released!</h2>
 
   <p>
     More important changes since 0.6 (for more details see <a href="./openclinic/changelog.html">Changelog</a>):
@@ -96,7 +96,7 @@
 </div>
 
 <div class="notice" id="upgrade_0_6">
-  <h1>Upgrade from 0.6 version</h1>
+  <h2>Upgrade from 0.6 version</h2>
 
   <p>
     After upgrade OpenClinic from 0.6 version is recommended check all patients and problems information (doctor you are assigned to, doctor who treated you). This is due to changes in database structure.

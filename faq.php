@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: faq.php,v 1.7 2009/01/06 15:02:17 David Bowman Exp $
+ * @version   CVS: $Id: faq.php,v 1.8 2009/01/10 14:34:34 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -26,7 +26,7 @@
 ?>
 
 <div class="notice">
-  <h1>FAQ</h1>
+  <h2>FAQ</h2>
 
   <p>
     We expect your questions at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">openclinic at gmail dot com</a>!
@@ -34,7 +34,7 @@
 </div>
 
 <div class="notice" id="deleting_patient_problem">
-  <h2>Deleting a medical problem or patient bug</h2>
+  <h3>Deleting a medical problem or patient bug</h3>
 
   <p>
     In version 0.7 it happened an error when you try to delete a patient or a medical problem. It is caused by the lack of a field in the database. In order to solve this bug, it is necessary to execute the next <acronym>SQL</acronym> sentences with an user with permissions to alter the table structure:
@@ -51,7 +51,7 @@ mysql&gt; <strong>ALTER TABLE deleted_problem_tbl</strong>
 </div>
 
 <div class="notice" id="medical_tests_problem">
-  <h2>Problem to see medical tests</h2>
+  <h3>Problem to see medical tests</h3>
 
   <p>
     There is a bug in 0.7 version that does not allow to see the medical test in a medical problem. Until it is fixed in the next version, you can mitigate its misworking following these two advices:
@@ -72,7 +72,7 @@ mysql&gt; <strong>ALTER TABLE deleted_problem_tbl</strong>
 </div>
 
 <div class="notice" id="translate_date_entries">
-  <h2>How to translate the date-relative entries</h2>
+  <h3>How to translate the date-relative entries</h3>
 
   <p>
     There are 2 entries in the file <code>.po</code> that can cause some problem in the way OpenClinic works. They are related with the dates (<code>'Y-m-d H:i:s'</code> y <code>'Y-m-d'</code>). By default they are in ISO format but they could be changed according to localization of every language.
@@ -90,7 +90,7 @@ mysql&gt; <strong>ALTER TABLE deleted_problem_tbl</strong>
 </div>
 
 <div class="notice" id="staff_member_header">
-  <h2>How to fix the Staff Member bug in 0.7 version</h2>
+  <h3>How to fix the Staff Member bug in 0.7 version</h3>
 
   <p>
     One of the improvements in 0.7 version was the profile removal. In the page aforementioned not all the profile references were deleted, that is the reason why there are a little misunderstanding between the content and the headers.
@@ -115,7 +115,7 @@ $thead = array(
 </div>
 
 <div class="notice" id="second_surname_not_compulsory">
-  <h2>How to achieve that the second surname family name was not compulsory</h2>
+  <h3>How to achieve that the second surname family name was not compulsory</h3>
 
   <p>
      Many people have asked the <strong>Surname 2</strong> was not compulsory. We are building the next version so this feature can be set.
@@ -137,7 +137,7 @@ $thead = array(
 </div>
 
 <div class="notice" id="install_authentication">
-  <h2>Authentication dialogue to get access to install folder</h2>
+  <h3>Authentication dialogue to get access to install folder</h3>
 
   <p>
      The authentication dialogue is shown when you try to get access to folder <code>install</code> in previous versions to 0.7 and the following files are active <code>.htaccess</code> in Apache configuration.
@@ -151,7 +151,7 @@ $thead = array(
 </div>
 
 <div class="notice">
-  <h2>PHP Configuration</h2>
+  <h3>PHP Configuration</h3>
 
   <p>
     How to configure PHP sessions. Edit your <code>php.ini</code> file and verify these values:
@@ -189,7 +189,7 @@ $thead = array(
 </div>
 
 <div class="notice">
-  <h2>Characters allowed to passwords</h2>
+  <h3>Characters allowed to passwords</h3>
 
   <p>
     The valid characters to be in passwords are letters ([a-zA-Z]), digits ([0-9]), white space and the next symbols: <code># * , ; : _ - + ! $ % &amp; / | ? { [ ( ) ] } =</code>
