@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: footer.php,v 1.8 2009/01/08 17:56:47 David Bowman Exp $
+ * @version   CVS: $Id: footer.php,v 1.9 2009/01/10 14:31:51 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -30,17 +30,21 @@
 
 <?php require_once("./navbar.php"); ?>
 
-      <p class="w3c_button">
-        <a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.1"><span class="w3c">W3C</span> <span class="spec">XHTML 1.1</span></a>
-      </p>
+      <h3>Validation links</h3>
 
-      <p class="w3c_button">
-        <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><span class="w3c">W3C</span> <span class="spec">CSS2</span></a>
-      </p>
+      <ul id="validation">
+        <li>
+          <a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.1"><span class="w3c">W3C</span> <span class="spec">XHTML 1.1</span></a>
+        </li>
 
-      <p class="w3c_button" id="rss">
-        <a href="./feed.php" title="Really Simple Syndication 2.0 (News &amp; FAQ sections)"><span class="w3c">RSS</span> <span class="spec">2.0</span></a>
-      </p>
+        <li>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><span class="w3c">W3C</span> <span class="spec">CSS2</span></a>
+        </li>
+
+        <li id="rss">
+          <a href="./feed.php" title="Really Simple Syndication 2.0 (News &amp; FAQ sections)"><span class="w3c">RSS</span> <span class="spec">2.0</span></a>
+        </li>
+      </ul>
     </div>
 
     <hr />
@@ -62,8 +66,6 @@
         <li><a href="./openclinic/demo_version.html">Demo version</a></li>
       </ul>
 
-      <hr />
-
       <h4>SF's links</h4>
 
       <ul>
@@ -74,7 +76,7 @@
         <li><a href="http://sourceforge.net/forum/?group_id=70742">Forums</a></li>
       </ul>
 
-      <hr />
+      <h4>Advertising</h4>
 
       <p><a href="http://sourceforge.net/"><img src="./i/sf-logo.png" title="Project hosted in SourceForge.net" width="125" height="37" alt="SourceForge logo" /></a></p>
 
@@ -87,7 +89,7 @@
   <div id="footer">
     <p id="copyright">Copyright &copy; 2002-<?php echo date("Y"); ?> <a href="mailto:openclinic@gmail.com?subject=OpenClinic" accesskey="9">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a>.</p>
 
-    <p id="date">Last modified: 2009-01-08</p>
+    <p id="date">Last modified: 2009-01-10</p>
   </div>
 </div>
 </body>
