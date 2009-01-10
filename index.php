@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: index.php,v 1.4 2009/01/06 21:23:18 David Bowman Exp $
+ * @version   CVS: $Id: index.php,v 1.5 2009/01/10 14:36:17 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -17,7 +17,7 @@
    * Controlling vars
    */
   $nav = "home";
-  $title = "Home page";
+  $title = "What is OpenClinic?";
 
   /**
    * Show page
@@ -26,7 +26,7 @@
 ?>
 
 <div class="notice">
-  <h1>What is OpenClinic project?</h1>
+  <h2>What is OpenClinic project?</h2>
 
   <p>
     OpenClinic is an easy to use, open source, medical records system written in <a href="http://www.php.net"><acronym title="PHP: Hypertext Preprocessor">PHP</acronym></a>. It has been mainly thougth for private clinics, surgeries and private doctors. It is platform independent and it has multilanguage architecture.
@@ -78,7 +78,7 @@
     </li>
   </ul>
 
-  <h2>Requirements</h2>
+  <h3>Requirements</h3>
 
   <ul>
     <li><a href="http://www.php.net/">PHP4</a> &gt;= 4.2 (due to session variable changes in PHP 4.2) compiled with MySQL support (tested with versions 4.2.x, 4.3.x and 4.4.x);</li>
@@ -90,7 +90,7 @@
     <li>and, of course, a web browser (with JavaScript and good <acronym title="Cascading Style Sheet level 2">CSS2</acronym> support). We recommend <a href="http://www.opera.com/">Opera</a> or <a href="http://www.mozilla.org/">Firefox</a>.</li>
   </ul>
 
-  <h2>Features</h2>
+  <h3>Features</h3>
 
   <dl>
     <dt>Environment</dt>
