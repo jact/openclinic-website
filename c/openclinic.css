@@ -8,7 +8,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2009 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: openclinic.css,v 1.8 2009/01/08 18:13:30 David Bowman Exp $
+ * @version   CVS: $Id: openclinic.css,v 1.9 2009/01/10 14:42:15 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -23,17 +23,34 @@ html, body {
   font-size: 95%;
 }
 #header {
-  color: #8492A5;
   background: #fff;
+  color: #8492A5;
   border-bottom: 6px solid #000;
 }
 #home_page {
   width: 30%;
   margin-left: -100%;
 }
-#logo {
-  display: block; /* deactivate image gap in Gecko browsers */
+/* Malarkey Image Replacement (MIR) */
+#home_page a {
+  display: block;
+  width: 291px;
+  height: 58px;
+  background: url(../i/openclinic_logo.png) no-repeat;
+  text-decoration: none;
+  text-indent: -5000em;
 }
+.mir {
+  letter-spacing: -1000em;
+}
+/* Just for Opera, but hide from MacIE */
+/*\*/
+html>body .mir {
+  letter-spacing: normal;
+  text-indent: -999em;
+  overflow: hidden;
+}
+/* End of hack */
 #shortcuts {
   width: 70%;
   margin-left: -70%;
@@ -61,14 +78,8 @@ hr, li#skip, #navigation h3 {
   display: none;
   visibility: hidden;
 }
-hr#separator {
-  display: block;
-  visibility: visible;
-  border: 1px solid #fff;
-  color: #fff;
-  background: #fff;
-  margin: 0;
-  padding: 0;
+#main {
+  border-top: 2px solid #fff;
 }
 /* View http://alisapart.com/articles/fauxabsolutepositioning */
 .line {
@@ -102,16 +113,23 @@ hr#separator {
   color: #000;
   word-spacing: 5px;
 }
-.notice h1, .notice h2, .notice .sign {
+.notice h2, .notice h3, .notice .sign {
   margin: 2px 0;
   padding: 0 2px;
   position: relative; /* to avoid float IE6 bug */
   background: #9CAAB5;
   color: #fff;
 }
-.notice .sign {
+.notice h2 {
+  font-size: 200%;
+}
+.notice h3 {
+  font-size: 160%;
+}
+#content .sign {
   text-align: right;
   font-weight: bold;
+  margin-bottom: 0;
 }
 .notice a {
   padding: 1px 2px;
@@ -152,9 +170,9 @@ var {
   text-align: right;
 }
 #footer a {
-  color: #EFF3F7;
+  color: #E6FFB4;
 }
-#navigation ul {
+#navbar {
   list-style: none;
   margin: 10px 14px;
   border: 1px solid #5976b2;
@@ -162,34 +180,72 @@ var {
   background: #E7E7EF;
   color: #000;
 }
-#navigation ul li {
+#navbar li {
   font-size: 14px;
   border-top: 1px solid #5976b2;
   /* IE/Win gets upset if there is no bottom border... Go figure. */
   border-bottom: 1px solid #22437f;
 }
-#navigation ul li a {
+#navbar li a {
   padding: 4px 0 4px 6px;
   display: block;
   color: #000;
   width: 100%;
 }
-html>body #navigation ul li a {
+html>body #navbar li a {
   width: auto; /* be nice with Opera and Gecko browsers */
 }
-#navigation ul li a:visited {
-  color: #8492A5;
+#navbar li a:visited {
+  color: #34548F;
 }
-#navigation ul li a:hover {
+#navbar li a:hover {
   background: #34548f;
   color: #fff;
   text-decoration: none;
 }
-#navigation ul li strong {
+#navbar li strong {
   color: #fff;
   background: #10203b;
   display: block;
   padding: 4px 6px;
+}
+#validation {
+  list-style-type: none;
+}
+#validation li {
+  margin: 8px 14px;
+  width: 105px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 70%;
+  font-weight: bold;
+}
+#validation a {
+  display: block;
+  width: 100%;
+}
+#validation a:link, #validation a:visited, #validation a:hover {
+  background: #fc6;
+  color: #000;
+  text-decoration: none;
+}
+#validation a:link, #validation a:visited {
+  border-width: 1px 2px 2px 1px;
+  border-style: solid;
+  border-color: #cecece #4a4a4a #4a4a4a #cecece;
+}
+#validation a:hover {
+  border-width: 2px 1px 1px 2px;
+  border-style: solid;
+  border-color: #4a4a4a #cecece #cecece #4a4a4a;
+}
+#validation span.w3c {
+  padding: 0 0.4em;
+  background: #fff;
+  color: #0c479d;
+}
+#validation #rss a {
+  background: #f60;
+  color: #fff;
 }
 #extra h4 {
   margin: 8px 10px;
@@ -242,7 +298,7 @@ html>body #navigation ul li a {
   margin-left: 2em;
 }
 a:visited {
-  color: #C992A5;
+  color: #AD5F7B;
 }
 a img {
   border: 0;
@@ -250,46 +306,13 @@ a img {
 #coresis {
   border: 1px solid #000;
 }
-.w3c_button {
-  margin: 8px 14px;
-  width: 105px;
-  font-family: helvetica, arial, sans-serif;
-  font-size: 70%;
-  font-weight: bold;
-}
-.w3c_button a {
-  display: block;
-  width: 100%;
-}
-.w3c_button a:link, .w3c_button a:visited, .w3c_button a:hover {
-  background: #fc6;
-  color: #000;
-  text-decoration: none;
-}
-.w3c_button a:link, .w3c_button a:visited {
-  border-width: 1px 2px 2px 1px;
-  border-style: solid;
-  border-color: #cecece #4a4a4a #4a4a4a #cecece;
-}
-.w3c_button a:hover {
-  border-width: 2px 1px 1px 2px;
-  border-style: solid;
-  border-color: #4a4a4a #cecece #cecece #4a4a4a;
-}
-.w3c_button span.w3c {
-  padding: 0 0.4em;
-  background: #fff;
-  color: #0c479d;
-}
-#rss a {
-  background: #f60;
-  color: #fff;
-}
 pre {
   background: #CCECF9;
   color: #000;
   border: 1px solid #84D2F5;
   padding: 2px 3px;
+  overflow: auto;
+  width: 98.5%;
 }
 code.comment {
   background: inherit;
