@@ -6,9 +6,9 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: openclinic.css,v 1.9 2009/01/10 14:42:15 David Bowman Exp $
+ * @version   CVS: $Id: openclinic.css,v 1.10 2013/02/02 19:52:07 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -61,7 +61,7 @@ html>body .mir {
   display: inline;
 }
 #shortcuts a {
-  padding: 20px 30px 18px 50px;
+  padding: 15px 30px 15px 50px;
   font-weight: bold;
 }
 html>body a#download {
@@ -112,19 +112,28 @@ hr, li#skip, #navigation h3 {
   background: #EFF3F7;
   color: #000;
   word-spacing: 5px;
+  border-radius: 10px;
 }
 .notice h2, .notice h3, .notice .sign {
   margin: 2px 0;
-  padding: 0 2px;
+  padding: 0 4px;
   position: relative; /* to avoid float IE6 bug */
   background: #9CAAB5;
   color: #fff;
+  border-radius: 3px;
 }
 .notice h2 {
   font-size: 200%;
 }
 .notice h3 {
   font-size: 160%;
+}
+.last {
+  border: 2px solid #10203B;
+}
+.last h2, .last .sign {
+  background: #10203B;
+  color: #fff;
 }
 #content .sign {
   text-align: right;
@@ -157,6 +166,7 @@ var {
   background: #8492A5;
   color: #fff;
   border: 1px solid #EFF3F7;
+  border-radius: 3px;
 }
 #footer p {
   margin: 0;
@@ -179,12 +189,13 @@ var {
   border-top: 0;
   background: #E7E7EF;
   color: #000;
+  border-radius: 5px;
 }
 #navbar li {
   font-size: 14px;
   border-top: 1px solid #5976b2;
   /* IE/Win gets upset if there is no bottom border... Go figure. */
-  border-bottom: 1px solid #22437f;
+  /*border-bottom: 1px solid #22437f;*/
 }
 #navbar li a {
   padding: 4px 0 4px 6px;
@@ -266,7 +277,7 @@ html>body #navbar li a {
   color: #000;
 }
 #extra a:visited {
-  color: #8492A5;
+  color: #34548f;
 }
 #extra a:hover {
   background: #000;
