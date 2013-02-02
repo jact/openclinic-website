@@ -7,9 +7,9 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: news.php,v 1.6 2009/01/10 14:36:40 David Bowman Exp $
+ * @version   CVS: $Id: news.php,v 1.7 2013/02/02 20:00:43 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -24,6 +24,34 @@
    */
   require_once("./header.php");
 ?>
+
+<div class="notice last" id="released_0_8">
+  <h2>OpenClinic 0.8 released after 8 years!</h2>
+
+  <p>Although more versions have not been published since the end of 2004, OpenClinic development has not been standing all this time. The application has been completely rewritten and has a new graphical look. Changes in MySQL (the default storage is InnoDB now), have led me to publish a new version.</p>
+
+  <p>More important changes since 0.7 version (for more details see <a href="./openclinic/changelog.html">Changelog</a>):</p>
+
+  <ul>
+    <li>Code compatibility with PHP5 (incompatible with PHP4) and MySQL 5.5</li>
+
+    <li>The storage engine used in MySQL is MyISAM although the default is InnoDB</li>
+
+    <li>Removed all CSS themes and only includes one by default (new page structure)</li>
+
+    <li>Reorganization of directories and files in the project (very extensive and deep..., the code does not look anything like the previous version)</li>
+
+    <li>CSRF and Session Fixation Protection</li>
+
+    <li>Unobtrusive JavaScript in all pages</li>
+
+    <li>Changed the structure of XML database dumps (based on Propel)</li>
+
+    <li>The second surname is not required to fill in forms</li>
+  </ul>
+
+  <p class="sign">2013-02-02</p>
+</div>
 
 <div class="notice" id="email_change">
   <h2>New mail address project</h2>
