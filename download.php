@@ -7,9 +7,9 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: download.php,v 1.6 2009/01/10 14:33:50 David Bowman Exp $
+ * @version   CVS: $Id: download.php,v 1.7 2013/02/02 19:54:25 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -45,7 +45,7 @@
   </p>
 
   <p>
-    All available documentation to download (0.1 version) is for 0.6 version of OpenClinic. Right now it has been upgrading to fit 0.7 version.
+    All available documentation to download (0.1 version) is for 0.6 version of OpenClinic.
   </p>
 
   <h3>File signature to check its authenticity</h3>
@@ -66,18 +66,19 @@
     <tbody>
 <?php
   $array = array(
-    'c70d407135246f7d064226a79cbb23f4' => 'openclinic-0.1.tar.gz',
-    'cf43efbd87203738b49216e9717951da' => 'openclinic-0.2.tar.gz',
-    'e39ffe06b0ba5d58d59cf1b1f9cca7e8' => 'openclinic-0.3.tar.gz',
-    '8275d2d29d9bddb09f2c0f10a90084fd' => 'openclinic-0.4.tar.bz2',
-    '9868a8ca4311590287dd88138a9e80f4' => 'openclinic-0.4.tar.gz',
-    '9512485bd67b61e7ee29970b390c0c42' => 'openclinic-0.5.tar.bz2',
-    'c00c83e732394902f0dc2041e9d0d6cd' => 'openclinic-0.5.tar.gz',
-    'a26aae34d4f9dd0f292d2e040b7c7f7b' => 'openclinic-0.6.tar.bz2',
-    '6247d609212e492eb9e943624ca10962' => 'openclinic-0.6.tar.gz',
+    '25f7ecb0ca8a8cb376bb1576726afd5d' => 'openclinic-0.8.tar.bz2',
     '0338bd0e62ecc971d4a863a388cc1ad1' => 'openclinic-0.7.tar.bz2',
     '029f51523c202e2d1afff8837adb2df5' => 'openclinic-0.7.tar.gz',
-    'c28c1500c9e92ac7c40c272c3e47b6c9' => 'openclinic-lang-bulgarian-0.3.zip',
+    'a26aae34d4f9dd0f292d2e040b7c7f7b' => 'openclinic-0.6.tar.bz2',
+    '6247d609212e492eb9e943624ca10962' => 'openclinic-0.6.tar.gz',
+    //'9512485bd67b61e7ee29970b390c0c42' => 'openclinic-0.5.tar.bz2',
+    //'c00c83e732394902f0dc2041e9d0d6cd' => 'openclinic-0.5.tar.gz',
+    //'8275d2d29d9bddb09f2c0f10a90084fd' => 'openclinic-0.4.tar.bz2',
+    //'9868a8ca4311590287dd88138a9e80f4' => 'openclinic-0.4.tar.gz',
+    //'e39ffe06b0ba5d58d59cf1b1f9cca7e8' => 'openclinic-0.3.tar.gz',
+    //'cf43efbd87203738b49216e9717951da' => 'openclinic-0.2.tar.gz',
+    //'c70d407135246f7d064226a79cbb23f4' => 'openclinic-0.1.tar.gz',
+    //'c28c1500c9e92ac7c40c272c3e47b6c9' => 'openclinic-lang-bulgarian-0.3.zip',
     '8faa4419ebffdee3a8792df79a1d2c57' => 'openclinic-lang-nl_BE-0.6.zip',
     '66938a130902dc763fb8f98a5e6a6aa5' => 'openclinic-lang-nl_BE-0.7.zip',
     'a387b15dda4de9062946b62c2844db5d' => 'openclinic-lang-zh_TW-0.7.zip',
