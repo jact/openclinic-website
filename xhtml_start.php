@@ -7,9 +7,9 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: xhtml_start.php,v 1.6 2009/01/06 15:03:52 David Bowman Exp $
+ * @version   CVS: $Id: xhtml_start.php,v 1.7 2013/02/02 19:58:21 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -22,6 +22,11 @@
   define("OPEN_CHARSET",  "UTF-8");
   define("OPEN_ENCODING", "UTF-8");
   define("OPEN_BUFFER",   true);
+
+  if (version_compare(phpversion(), '5.0.0') > 0)
+  {
+    date_default_timezone_set('Europe/Madrid');
+  }
 
   /**
    * string _convert2Utf8(string $buffer)
@@ -57,7 +62,8 @@
     }
   }
 
-  $contentType = ($xhtml) ? "application/xhtml+xml" : "text/html";
+  //$contentType = ($xhtml) ? "application/xhtml+xml" : "text/html";
+  $contentType = "text/html";
   $contentType .= "; charset=" . OPEN_CHARSET;
 
   header("Content-Type: " . $contentType);
@@ -71,16 +77,16 @@
     }
     else*/
     {
-      ob_start("_convert2Utf8");
+      ob_start(/*"_convert2Utf8"*/);
     }
   }
 
   // I hate MSIE (compatMode disabled in 6.0 to get same look & feel)
-  if (strpos($contentType, "application/xhtml+xml") !== false || strpos($_SERVER['HTTP_USER_AGENT'], "MSIE 6.0"))
+  /*if (strpos($contentType, "application/xhtml+xml") !== false || strpos($_SERVER['HTTP_USER_AGENT'], "MSIE 6.0"))
   {
     // To prevent 'short_open_tag = On' mistake
     echo '<?xml version="1.0" encoding="' . OPEN_ENCODING . '" standalone="no" ?>' . "\n";
-  }
+  }*/
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
@@ -110,6 +116,6 @@
 
 <meta name="description" content="OpenClinic is an easy to use, open source, medical records system written in PHP" />
 
-<meta name="author" content="Jose Antonio Chavarría" />
+<meta name="author" content="Jose Antonio ChavarrÃ­a" />
 
-<meta name="copyright" content="2002-<?php echo date("Y"); ?> Jose Antonio Chavarría" />
+<meta name="copyright" content="2002-<?php echo date("Y"); ?> Jose Antonio ChavarrÃ­a" />
