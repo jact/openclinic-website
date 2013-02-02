@@ -7,9 +7,9 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: about.php,v 1.4 2009/01/10 14:32:47 David Bowman Exp $
+ * @version   CVS: $Id: about.php,v 1.5 2013/02/02 19:53:26 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -33,7 +33,7 @@
   </p>
 
   <p>
-    This site is designed to the lastest generation browsers like <a href="http://www.opera.com/">Opera</a> or <a href="http://www.mozilla.org/products/firefox/">Firefox</a>. In <acronym title="Microsoft Internet Explorer">MSIE</acronym> is possible that you cannot see it properly.
+    This site is designed to the lastest generation browsers like <a href="http://www.opera.com/">Opera</a>, <a href="http://www.mozilla.org/products/firefox/">Firefox</a> or <a href="http://download-chromium.appspot.com/">Chromium</a>.
   </p>
 
   <p>
@@ -43,7 +43,7 @@
   <h3>Developers information</h3>
 
   <dl>
-    <dt>[jact] - Jose Antonio Chavarría <strong>&lt;openclinic at gmail dot com&gt;</strong></dt>
+    <dt>[jact] - Jose Antonio ChavarrÃ­a <strong>&lt;openclinic at gmail dot com&gt;</strong></dt>
 
     <dd>
       <ul>
@@ -51,7 +51,7 @@
 
         <li>person in charge of OpenClinic's maintenance service since autumn 2002</li>
 
-        <li>person in charge of the project <a href="http://sourceforge.net/project/showfiles.php?group_id=70742"><q xml:lang="es">Control y Seguimiento de Historias Clínicas: Diseño e implementación</q></a></li>
+        <li>person in charge of the project <a href="http://sourceforge.net/project/showfiles.php?group_id=70742"><q xml:lang="es">Control y Seguimiento de Historias ClÃ­nicas: DiseÃ±o e implementaciÃ³n</q></a></li>
       </ul>
     </dd>
 
@@ -61,7 +61,7 @@
       <ul>
         <li>official beta-tester of OpenClinic project</li>
 
-        <li>person in charge of the project <a href="http://sourceforge.net/project/showfiles.php?group_id=70742"><q xml:lang="es">Control y Seguimiento de Historias Clínicas: Diseño del sistema seguro</q></a></li>
+        <li>person in charge of the project <a href="http://sourceforge.net/project/showfiles.php?group_id=70742"><q xml:lang="es">Control y Seguimiento de Historias ClÃ­nicas: DiseÃ±o del sistema seguro</q></a></li>
       </ul>
     </dd>
 
@@ -77,7 +77,7 @@
 
     <dd>
       <ul>
-        <li>dutch (nl_BE) translator: 0.6, 0.7 versions</li>
+        <li>dutch (nl_BE) translator: 0.6, 0.7 and 0.8 versions</li>
       </ul>
     </dd>
 
@@ -85,7 +85,7 @@
 
     <dd>
       <ul>
-        <li>traditional chinese (zh_TW BIG5) translator: 0.7 version</li>
+        <li>traditional chinese (zh_TW BIG5) translator: 0.7 and 0.8 versions</li>
       </ul>
     </dd>
   </dl>
@@ -104,7 +104,7 @@
     PS: Please, excuse my English, I'm not a native speaker, I'm Spanish, but for sure I'll read all emails I receive (English ones too).
   </p>
 
-  <p class="sign">-- Jose Antonio Chavarría &lt;openclinic at gmail dot com&gt;</p>
+  <p class="sign">-- Jose Antonio ChavarrÃ­a &lt;openclinic at gmail dot com&gt;</p>
 </div>
 
 <?php
