@@ -7,9 +7,9 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: footer.php,v 1.9 2009/01/10 14:31:51 David Bowman Exp $
+ * @version   CVS: $Id: footer.php,v 1.10 2013/02/02 19:55:25 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -38,7 +38,7 @@
         </li>
 
         <li>
-          <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><span class="w3c">W3C</span> <span class="spec">CSS2</span></a>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Valid CSS"><span class="w3c">W3C</span> <span class="spec">CSS3</span></a>
         </li>
 
         <li id="rss">
@@ -87,9 +87,9 @@
   <hr />
 
   <div id="footer">
-    <p id="copyright">Copyright &copy; 2002-<?php echo date("Y"); ?> <a href="mailto:openclinic@gmail.com?subject=OpenClinic" accesskey="9">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a>.</p>
+    <p id="copyright">Copyright &copy; 2002-<?php echo date("Y"); ?> <a href="mailto:openclinic@gmail.com?subject=OpenClinic" accesskey="9">Jose Antonio ChavarrÃ­a</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a>.</p>
 
-    <p id="date">Last modified: 2009-01-10</p>
+    <p id="date">Last modified: 2013-02-02</p>
   </div>
 </div>
 </body>
