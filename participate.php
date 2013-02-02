@@ -7,11 +7,11 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: participate.php,v 1.4 2009/01/10 14:35:26 David Bowman Exp $
+ * @version   CVS: $Id: participate.php,v 1.5 2013/02/02 20:00:15 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
- * @todo      change HTML scheme and review participation modes
+ * @todo      review participation modes
  */
 
   /**
@@ -36,7 +36,7 @@
   <ul>
     <li>Translating to others languages.</li>
 
-    <li>Making CSS2 <em>tableless</em> themes.</li>
+    <li>Making CSS themes.</li>
 
     <li>Testing application and reporting bugs.</li>
   </ul>
@@ -56,33 +56,35 @@
   <pre>
 body
 |
-|-- #header
-|   |
-|   |-- #subHeader
-|   |   |
-|   |    -- #headerInformation
-|   |
-|   |-- .menuBar
-|   |   |
-|   |    -- #tabs
-|   |
-|    -- #sourceForgeLinks
-|
-|-- #sideBar
-|   |
-|   |- .sideBarLogin
-|   |
-|   |- .linkList
-|   |   |
-|   |    -- [.subnavbar]
-|   |
-|    -- #sideBarLogin
-|
-|-- #mainZone
-|
- -- #footer
+|-- div#wrap
     |
-     -- #footerLinks
+    |-- div#header
+    |   |
+    |   |-- p#logo
+    |   |
+    |   |-- ul#shortcuts
+    |   |
+    |   |-- div#tabs
+    |
+    |-- div#main
+    |   |
+    |   |-- div#content
+    |
+    |-- div#navigation
+    |   |
+    |   |-- ul
+    |   |
+    |   |- div#clinic_info .vcard .contact
+    |
+    |-- #footer
+        |
+        |-- ul#logos
+        |
+        |-- ul#sf_links
+        |
+        |-- ul#mini_logos
+        |
+        |-- div#app_info
   </pre>
 
   <p>
@@ -90,7 +92,7 @@ body
   </p>
 
   <p class="center">
-    <img src="./i/html_scheme_2d.png" alt="Scheme positioning" width="464" height="474" />
+    <img src="./i/html_scheme_2d.png" alt="Scheme positioning" width="594" height="829" />
   </p>
 </div>
 
