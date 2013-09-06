@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: about.php,v 1.5 2013/02/02 19:53:26 David Bowman Exp $
+ * @version   CVS: $Id: about.php,v 1.6 2013/09/06 10:25:21 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -25,8 +25,8 @@
   require_once("./header.php");
 ?>
 
-<div class="notice">
-  <h2>About</h2>
+<article>
+  <h1>About</h1>
 
   <p>
     OpenClinic logo is made by <a href="http://www.coresis.com/">Coresis</a>. Thanks a lot.
@@ -40,7 +40,7 @@
     You can email your suggestions about this site or this project at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">&lt;openclinic at gmail dot com&gt;</a>.
   </p>
 
-  <h3>Developers information</h3>
+  <h2>Developers information</h2>
 
   <dl>
     <dt>[jact] - Jose Antonio Chavarría <strong>&lt;openclinic at gmail dot com&gt;</strong></dt>
@@ -88,9 +88,17 @@
         <li>traditional chinese (zh_TW BIG5) translator: 0.7 and 0.8 versions</li>
       </ul>
     </dd>
+
+    <dt>Francesco Assisi <strong>&lt;fra dot assisi at gmail dot com&gt;</strong></dt>
+
+    <dd>
+      <ul>
+        <li>italian (it_IT) translator: 0.8 version</li>
+      </ul>
+    </dd>
   </dl>
 
-  <h3>Farewell</h3>
+  <h2>Farewell</h2>
 
   <p>
     Please, enjoy OpenClinic and remember that this is free <acronym title="GNU General Public License">GPL</acronym> software and comes without any warranty and without technical support.
@@ -105,7 +113,7 @@
   </p>
 
   <p class="sign">-- Jose Antonio Chavarría &lt;openclinic at gmail dot com&gt;</p>
-</div>
+</article>
 
 <?php
   require_once("./footer.php");
