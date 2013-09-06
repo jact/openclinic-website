@@ -7,9 +7,9 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: demo.php,v 1.4 2009/01/10 14:33:26 David Bowman Exp $
+ * @version   CVS: $Id: demo.php,v 1.5 2013/09/06 10:25:44 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -25,8 +25,8 @@
   require_once("./header.php");
 ?>
 
-<div class="notice">
-  <h2>About Demo version</h2>
+<article>
+  <h1>About Demo version</h1>
 
   <p>
     Some failures can appear in the pages, because what can be seen in the <a href="./openclinic/index.php">DEMO version</a> that you are executing is usually also a development version. We apologize for the annoyance.
@@ -43,7 +43,7 @@
   <p>
     That is why, we do feel very satisfied with the job done. It is very encouragement to know that there is somebody on the other side.
   </p>
-</div>
+</article>
 
 <?php
   require_once("./footer.php");

@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: index.php,v 1.6 2013/02/02 20:02:53 David Bowman Exp $
+ * @version   CVS: $Id: index.php,v 1.7 2013/09/06 10:27:43 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -25,8 +25,8 @@
   require_once("./header.php");
 ?>
 
-<div class="notice">
-  <h2>What is OpenClinic project?</h2>
+<article>
+  <h1>What is OpenClinic project?</h1>
 
   <p>
     OpenClinic is an easy to use, open source, medical records system written in <a href="http://www.php.net"><acronym title="PHP: Hypertext Preprocessor">PHP</acronym></a>. It has been mainly thougth for private clinics, surgeries and private doctors. It is platform independent and it has multilanguage architecture.
@@ -78,7 +78,7 @@
     </li>
   </ul>
 
-  <h3>Requirements</h3>
+  <h2>Requirements</h2>
 
   <ul>
     <li>
@@ -110,7 +110,7 @@
     <li>and, of course, a web browser (with JavaScript and good <acronym title="Cascading Style Sheet level 2">CSS2</acronym> support). We recommend <a href="http://www.opera.com/">Opera</a>, <a href="http://www.mozilla.org/">Firefox</a> or <a href="http://download-chromium.appspot.com">Chromium</a>.</li>
   </ul>
 
-  <h3>Features</h3>
+  <h2>Features</h2>
 
   <dl>
     <dt>Environment</dt>
@@ -134,7 +134,7 @@
     <dt>Topic</dt>
     <dd>Dynamic Content</dd>
   </dl>
-</div>
+</article>
 
 <?php
   require_once("./footer.php");

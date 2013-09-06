@@ -7,9 +7,9 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: faq.php,v 1.8 2009/01/10 14:34:34 David Bowman Exp $
+ * @version   CVS: $Id: faq.php,v 1.9 2013/09/06 10:26:54 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -25,16 +25,16 @@
   require_once("./header.php");
 ?>
 
-<div class="notice">
-  <h2>FAQ</h2>
+<article>
+  <h1>FAQ</h1>
 
   <p>
     We expect your questions at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">openclinic at gmail dot com</a>!
   </p>
-</div>
+</article>
 
-<div class="notice" id="deleting_patient_problem">
-  <h3>Deleting a medical problem or patient bug</h3>
+<article id="deleting_patient_problem">
+  <h1>Deleting a medical problem or patient bug</h1>
 
   <p>
     In version 0.7 it happened an error when you try to delete a patient or a medical problem. It is caused by the lack of a field in the database. In order to solve this bug, it is necessary to execute the next <acronym>SQL</acronym> sentences with an user with permissions to alter the table structure:
@@ -47,11 +47,11 @@ mysql&gt; <strong>ALTER TABLE deleted_problem_tbl</strong>
   -&gt;   <strong>ADD collegiate_number VARCHAR(20) AFTER id_member;</strong>
   </code></pre>
 
-  <p class="sign">2006-01-16</p>
-</div>
+  <time datetime="2006-01-16">2006-01-16</time>
+</article>
 
-<div class="notice" id="medical_tests_problem">
-  <h3>Problem to see medical tests</h3>
+<article id="medical_tests_problem">
+  <h1>Problem to see medical tests</h1>
 
   <p>
     There is a bug in 0.7 version that does not allow to see the medical test in a medical problem. Until it is fixed in the next version, you can mitigate its misworking following these two advices:
@@ -68,11 +68,11 @@ mysql&gt; <strong>ALTER TABLE deleted_problem_tbl</strong>
     </li>
   </ul>
 
-  <p class="sign">2005-04-10</p>
-</div>
+  <time datetime="2005-04-10">2005-04-10</time>
+</article>
 
-<div class="notice" id="translate_date_entries">
-  <h3>How to translate the date-relative entries</h3>
+<article id="translate_date_entries">
+  <h1>How to translate the date-relative entries</h1>
 
   <p>
     There are 2 entries in the file <code>.po</code> that can cause some problem in the way OpenClinic works. They are related with the dates (<code>'Y-m-d H:i:s'</code> y <code>'Y-m-d'</code>). By default they are in ISO format but they could be changed according to localization of every language.
@@ -86,11 +86,11 @@ mysql&gt; <strong>ALTER TABLE deleted_problem_tbl</strong>
      To complete the translation of a language, it is possible, but not compulsory, to translate also the file <code>copyright.txt</code>. This file has inside a copy of the <acronym title="GNU General Public License">GPL</acronym> of the software application and it is shown choosing the option <strong>Home &raquo; License</strong>.
   </p>
 
-  <p class="sign">2005-04-06</p>
-</div>
+  <time datetime="2005-04-06">2005-04-06</time>
+</article>
 
-<div class="notice" id="staff_member_header">
-  <h3>How to fix the Staff Member bug in 0.7 version</h3>
+<article id="staff_member_header">
+  <h1>How to fix the Staff Member bug in 0.7 version</h1>
 
   <p>
     One of the improvements in 0.7 version was the profile removal. In the page aforementioned not all the profile references were deleted, that is the reason why there are a little misunderstanding between the content and the headers.
@@ -111,11 +111,11 @@ $thead = array(
 );
   </code></pre>
 
-  <p class="sign">2005-04-06</p>
-</div>
+  <time datetime="2005-04-06">2005-04-06</time>
+</article>
 
-<div class="notice" id="second_surname_not_compulsory">
-  <h3>How to achieve that the second surname family name was not compulsory</h3>
+<article id="second_surname_not_compulsory">
+  <h1>How to achieve that the second surname family name was not compulsory</h1>
 
   <p>
      Many people have asked the <strong>Surname 2</strong> was not compulsory. We are building the next version so this feature can be set.
@@ -133,11 +133,11 @@ $thead = array(
   }  <ins title="inserted code">*/</ins>
   </code></pre>
 
-  <p class="sign">2005-04-04</p>
-</div>
+  <time datetime="2005-04-04">2005-04-04</time>
+</article>
 
-<div class="notice" id="install_authentication">
-  <h3>Authentication dialogue to get access to install folder</h3>
+<article id="install_authentication">
+  <h1>Authentication dialogue to get access to install folder</h1>
 
   <p>
      The authentication dialogue is shown when you try to get access to folder <code>install</code> in previous versions to 0.7 and the following files are active <code>.htaccess</code> in Apache configuration.
@@ -147,11 +147,11 @@ $thead = array(
      To fix this problem it is only necessary to delete the file <code>install/.htaccess</code>. This file is used in <a href="./openclinic/index.php">DEMO version hosted in SourceForge</a> but in later versions it is not used at all. So from 0.7 version it is not available.
   </p>
 
-  <p class="sign">2005-04-04</p>
-</div>
+  <time datetime="2005-04-04">2005-04-04</time>
+</article>
 
-<div class="notice">
-  <h3>PHP Configuration</h3>
+<article>
+  <h1>PHP Configuration</h1>
 
   <p>
     How to configure PHP sessions. Edit your <code>php.ini</code> file and verify these values:
@@ -186,15 +186,15 @@ $thead = array(
       </p>
     </li>
   </ul>
-</div>
+</article>
 
-<div class="notice">
-  <h3>Characters allowed to passwords</h3>
+<article>
+  <h1>Characters allowed to passwords</h1>
 
   <p>
     The valid characters to be in passwords are letters ([a-zA-Z]), digits ([0-9]), white space and the next symbols: <code># * , ; : _ - + ! $ % &amp; / | ? { [ ( ) ] } =</code>
   </p>
-</div>
+</article>
 
 <?php
   require_once("./footer.php");

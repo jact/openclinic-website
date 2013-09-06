@@ -7,9 +7,9 @@
  * Licensed under the Creative Commons License
  *
  * @package   OpenClinic Web Site
- * @copyright 2002-2009 jact
+ * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: header.php,v 1.9 2009/01/10 14:29:49 David Bowman Exp $
+ * @version   CVS: $Id: header.php,v 1.10 2013/09/06 10:29:19 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -36,27 +36,27 @@
 
 <link rel="bookmark icon" type="image/png" href="./i/miniopc.png" />
 
-<link href="./c/openclinic.css" type="text/css" rel="stylesheet" title="OpenClinic Web Site" />
+<link rel="stylesheet" href="./c/openclinic.css" title="OpenClinic Web Site" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="./feed.php" />
+<link rel="alternate" type="application/rss+xml" title="OpenClinic feed (RSS 2.0)" href="./feed.php" />
 </head>
 <body>
 <div id="wrap">
-  <div id="header" class="line">
+  <header class="line">
     <h1 id="home_page" class="item mir">
       <a href="./index.php" title="Home page" accesskey="1">OpenClinic Project</a>
     </h1>
 
-    <ul id="shortcuts" class="item">
-      <li id="skip"><a href="#navigation" accesskey="2">Skip to navigation links</a></li>
+    <nav>
+      <ul id="shortcuts" class="item">
+        <li><a href="http://sourceforge.net/project/showfiles.php?group_id=70742" title="Shortcut to SourceForge download page" id="download">Download</a></li>
 
-      <li><a href="http://sourceforge.net/project/showfiles.php?group_id=70742" title="Shortcut to SourceForge download page" id="download">Download</a></li>
+        <li><a href="./openclinic/index.php" title="Shortcut to demo version" id="demo">Demo</a></li>
 
-      <li><a href="./openclinic/index.php" title="Shortcut to demo version" id="demo">Demo</a></li>
-
-      <li><a href="./faq.php" id="faq" title="Shortcut to Frequently Answers &amp; Questions">FAQ</a></li>
-    </ul>
-  </div>
+        <li><a href="./faq.php" id="faq" title="Shortcut to Frequently Answers &amp; Questions">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <hr />
 

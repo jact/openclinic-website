@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: xhtml_start.php,v 1.7 2013/02/02 19:58:21 David Bowman Exp $
+ * @version   CVS: $Id: xhtml_start.php,v 1.8 2013/09/06 10:29:54 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -19,7 +19,7 @@
     exit();
   }
 
-  define("OPEN_CHARSET",  "UTF-8");
+  define("OPEN_CHARSET",  "utf-8");
   define("OPEN_ENCODING", "UTF-8");
   define("OPEN_BUFFER",   true);
 
@@ -88,14 +88,15 @@
     echo '<?xml version="1.0" encoding="' . OPEN_ENCODING . '" standalone="no" ?>' . "\n";
   }*/
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
+<!DOCTYPE>
+<html lang="en" dir="ltr">
 <head>
+<meta charset="<?php echo OPEN_CHARSET; ?>" />
 <?php
-  //if ( !$xhtml )
+  /*if ( !$xhtml )
   {
     echo "\n" . '<meta http-equiv="Content-Type" content="' . $contentType . '" />' . "\n";
-  }
+  }*/
 ?>
 
 <title><?php

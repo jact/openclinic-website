@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: footer.php,v 1.10 2013/02/02 19:55:25 David Bowman Exp $
+ * @version   CVS: $Id: footer.php,v 1.11 2013/09/06 10:27:21 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -25,16 +25,16 @@
 
     <hr />
 
-    <div id="navigation" class="item">
-      <h3>Site navigation</h3>
+    <nav class="item">
+      <h1>Site navigation</h1>
 
 <?php require_once("./navbar.php"); ?>
 
-      <h3>Validation links</h3>
+      <h1>Validation links</h1>
 
       <ul id="validation">
         <li>
-          <a href="http://validator.w3.org/check/referer" title="Valid XHTML 1.1"><span class="w3c">W3C</span> <span class="spec">XHTML 1.1</span></a>
+          <a href="http://validator.w3.org/check/referer" title="Valid HTML5"><span class="w3c">W3C</span> <span class="spec">HTML5</span></a>
         </li>
 
         <li>
@@ -45,52 +45,60 @@
           <a href="./feed.php" title="Really Simple Syndication 2.0 (News &amp; FAQ sections)"><span class="w3c">RSS</span> <span class="spec">2.0</span></a>
         </li>
       </ul>
-    </div>
+    </nav>
 
     <hr />
 
-    <div id="extra" class="item">
-      <h4>Documentation</h4>
-
+    <aside class="item">
       <p>
         Read about the project, releases and more things related to OpenClinic:
       </p>
 
-      <ul>
-        <li><a href="./openclinic/changelog.html">Changelog</a></li>
+      <nav>
+        <h1>Documentation</h1>
 
-        <li><a href="./openclinic/coding_guidelines.html">Coding guidelines</a></li>
+        <ul>
+          <li><a href="./openclinic/changelog.html">Changelog</a></li>
 
-        <li><a href="./openclinic/install.html">Install instructions</a></li>
+          <li><a href="./openclinic/coding_guidelines.html">Coding guidelines</a></li>
 
-        <li><a href="./openclinic/demo_version.html">Demo version</a></li>
-      </ul>
+          <li><a href="./openclinic/install.html">Install instructions</a></li>
 
-      <h4>SF's links</h4>
+          <li><a href="./openclinic/demo_version.html">Demo version</a></li>
+        </ul>
+      </nav>
 
-      <ul>
-        <li><a href="http://sourceforge.net/projects/openclinic/">Project page</a></li>
+      <nav>
+        <h1>SF's links</h1>
 
-        <li><a href="http://sourceforge.net/tracker/?group_id=70742&amp;atid=528857">Report bugs</a></li>
+        <ul>
+          <li><a href="http://sourceforge.net/projects/openclinic/">Project page</a></li>
 
-        <li><a href="http://sourceforge.net/forum/?group_id=70742">Forums</a></li>
-      </ul>
+          <li><a href="http://sourceforge.net/tracker/?group_id=70742&amp;atid=528857">Report bugs</a></li>
 
-      <h4>Advertising</h4>
+          <li><a href="http://sourceforge.net/forum/?group_id=70742">Forums</a></li>
+        </ul>
+      </nav
 
-      <p><a href="http://sourceforge.net/"><img src="./i/sf-logo.png" title="Project hosted in SourceForge.net" width="125" height="37" alt="SourceForge logo" /></a></p>
+      <nav>
+        <h1>Advertising</h1>
 
-      <p><a href="http://www.coresis.com/"><img id="coresis" src="./i/coresis.png" title="Thanks Coresis" width="77" height="36" alt="Coresis logo" /></a></p>
-    </div>
+        <ul id="ads">
+          <li><a href="http://sourceforge.net/"><img src="./i/sf-logo.png" title="Project hosted in SourceForge.net" width="125" height="37" alt="SourceForge logo" /></a></li>
+
+          <li><a href="http://www.coresis.com/"><img id="coresis" src="./i/coresis.png" title="Thanks Coresis" width="77" height="36" alt="Coresis logo" /></a></li>
+        </ul>
+      </nav>
+    </aside>
   </div>
 
   <hr />
 
-  <div id="footer">
+  <footer>
     <p id="copyright">Copyright &copy; 2002-<?php echo date("Y"); ?> <a href="mailto:openclinic@gmail.com?subject=OpenClinic" accesskey="9">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a>.</p>
 
-    <p id="date">Last modified: 2013-02-02</p>
-  </div>
+    <time datetime="2013-09-06">Last modified: 2013-09-06</time>
+  </footer>
 </div>
 </body>
 </html>

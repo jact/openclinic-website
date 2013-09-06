@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: news.php,v 1.7 2013/02/02 20:00:43 David Bowman Exp $
+ * @version   CVS: $Id: news.php,v 1.8 2013/09/06 10:28:11 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -25,8 +25,8 @@
   require_once("./header.php");
 ?>
 
-<div class="notice last" id="released_0_8">
-  <h2>OpenClinic 0.8 released after 8 years!</h2>
+<article class="last" id="released_0_8">
+  <h1>OpenClinic 0.8 released after 8 years!</h1>
 
   <p>Although more versions have not been published since the end of 2004, OpenClinic development has not been standing all this time. The application has been completely rewritten and has a new graphical look. Changes in MySQL (the default storage is InnoDB now), have led me to publish a new version.</p>
 
@@ -50,11 +50,11 @@
     <li>The second surname is not required to fill in forms</li>
   </ul>
 
-  <p class="sign">2013-02-02</p>
-</div>
+  <time datetime="2013-02-02">2013-02-02</time>
+</article>
 
-<div class="notice" id="email_change">
-  <h2>New mail address project</h2>
+<article id="email_change">
+  <h1>New mail address project</h1>
 
   <p>
     We have changed our mail address to get more space and better service to send mails (we have had many problems in this subject using the current mail address). The new mail address to contact us is <strong>&lt;openclinic at gmail dot com&gt;</strong>. Please do not sent any mail to the formes address. We have had too many problems until today.
@@ -64,11 +64,11 @@
     One more advice: to distinguish easily your mail from spam, we would be very please if you add in Subject the word <q><strong>OpenClinic</strong></q>. Thanks for your collaboration.
   </p>
 
-  <p class="sign">2005-04-10</p>
-</div>
+  <time datetime="2005-04-10">2005-04-10</time>
+</article>
 
-<div class="notice" id="new_language_packs">
-  <h2>New language packs released</h2>
+<article id="new_language_packs">
+  <h1>New language packs released</h1>
 
   <p>
     Dirk De Naegel has translated 0.6 and 0.7 versions to Dutch (nl_BE). Eric Tang has translated to traditional chinese (zh_TW BIG5) 0.7 version. Thank you very much to all of you. All of them are available at <a href="http://sourceforge.net/project/showfiles.php?group_id=70742">SourceForge download page</a>.
@@ -78,11 +78,11 @@
     We would like to remind you that you can keep on developing the project making new translations. Although there are also others ways. Inside <a href="./participate.php">Participate</a> you can check some of them.
   </p>
 
-  <p class="sign">2005-04-10</p>
-</div>
+  <time datetime="2005-04-10">2005-04-10</time>
+</article>
 
-<div class="notice" id="released_0_7">
-  <h2>OpenClinic 0.7 released!</h2>
+<article id="released_0_7">
+  <h1>OpenClinic 0.7 released!</h1>
 
   <p>
     More important changes since 0.6 (for more details see <a href="./openclinic/changelog.html">Changelog</a>):
@@ -120,18 +120,18 @@
     <li>CSS2 table less based themes, changes in theme_tbl table and admin/theme_*.php files (new file admin/theme_preload_css.php)</li>
   </ul>
 
-  <p class="sign">2004-12-07</p>
-</div>
+  <time datetime="2004-12-07">2004-12-07</time>
+</article>
 
-<div class="notice" id="upgrade_0_6">
-  <h2>Upgrade from 0.6 version</h2>
+<article id="upgrade_0_6">
+  <h1>Upgrade from 0.6 version</h1>
 
   <p>
     After upgrade OpenClinic from 0.6 version is recommended check all patients and problems information (doctor you are assigned to, doctor who treated you). This is due to changes in database structure.
   </p>
 
-  <p class="sign">2004-12-07</p>
-</div>
+  <time datetime="2004-12-07">2004-12-07</time>
+</article>
 
 <?php
   require_once("./footer.php");
