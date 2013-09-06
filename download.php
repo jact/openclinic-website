@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: download.php,v 1.7 2013/02/02 19:54:25 David Bowman Exp $
+ * @version   CVS: $Id: download.php,v 1.8 2013/09/06 10:26:27 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -25,20 +25,24 @@
   require_once("./header.php");
 ?>
 
-<div class="notice">
-  <h2>Download page</h2>
+<article>
+  <h1>Download page</h1>
 
   <p>
     All OpenClinic versions can be found at <a href="http://sourceforge.net/project/showfiles.php?group_id=70742">SourceForge download page</a>. You can also find there the documents attached to the project.
   </p>
 
-  <h3>What is CSHC-DSS?</h3>
+  <p>
+    Source code project can be found at <a href="https://github.com/jact/openclinic/">GitHub</a>.
+  </p>
+
+  <h2>What is CSHC-DSS?</h2>
 
   <p>
     This project explains how the environment must be set where OpenClinic is to be on production. It is included different aspects: from the choice of operative system to how it must be set to be a web server and database.
   </p>
 
-  <h3>What is CSHC-DI?</h3>
+  <h2>What is CSHC-DI?</h2>
 
   <p>
     In this project it is shown the development proccess of the final design: the OpenClinic software. How the database has been designed, the classes, the different pages and why some decissions have been taken in the design. You can find also a detailed manual to use the application.
@@ -48,7 +52,7 @@
     All available documentation to download (0.1 version) is for 0.6 version of OpenClinic.
   </p>
 
-  <h3>File signature to check its authenticity</h3>
+  <h2>File signature to check its authenticity</h2>
 
   <p>
     In the next table, we provide you the signatures of the files that can be downloaded in md5 format. This way you can its good accuracy and authenticity.
@@ -105,7 +109,7 @@
 ?>
     </tbody>
   </table>
-</div>
+</article>
 
 <?php
   require_once("./footer.php");
