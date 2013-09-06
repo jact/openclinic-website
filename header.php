@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: header.php,v 1.10 2013/09/06 10:29:19 David Bowman Exp $
+ * @version   CVS: $Id: header.php,v 1.11 2013/09/06 10:48:29 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -36,7 +36,7 @@
 
 <link rel="bookmark icon" type="image/png" href="./i/miniopc.png" />
 
-<link rel="stylesheet" href="./c/openclinic.css" title="OpenClinic Web Site" />
+<link rel="stylesheet" href="./c/openclinic.css?20130906" title="OpenClinic Web Site" />
 
 <link rel="alternate" type="application/rss+xml" title="OpenClinic feed (RSS 2.0)" href="./feed.php" />
 </head>
