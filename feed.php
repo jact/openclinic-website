@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: feed.php,v 1.2 2013/02/02 20:02:00 David Bowman Exp $
+ * @version   CVS: $Id: feed.php,v 1.3 2013/09/12 14:10:42 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -49,6 +49,10 @@
   $feed .= '<ttl>' . '60' . '</ttl>';
 
   $news = array( // guid_fragment => array(title, pubDate)
+    'released_0_8_1' => array(
+      'OpenClinic 0.8.1 released!',
+      date($format, mktime(16, 5, 27, 9, 12, 2013))
+    ),
     'released_0_8' => array(
       'OpenClinic 0.8 released after 8 years!',
       date($format, mktime(20, 46, 10, 2, 2, 2013))

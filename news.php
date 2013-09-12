@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: news.php,v 1.8 2013/09/06 10:28:11 David Bowman Exp $
+ * @version   CVS: $Id: news.php,v 1.9 2013/09/12 14:10:42 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -25,7 +25,25 @@
   require_once("./header.php");
 ?>
 
-<article class="last" id="released_0_8">
+<article class="last" id="released_0_8_1">
+  <h1>OpenClinic 0.8.1 released!</h1>
+
+  <p>Changes over previous version (0.8), are these:</p>
+
+  <ul>
+    <li>New italian translation thanks to Francesco Assisi</li>
+
+    <li>Fixed deletion of staff (second surname issue)</li>
+
+    <li>Fixed installation wizard problems in Chrome browsers</li>
+  </ul>
+
+  <p>Also, source code repository has been published on <a href="https://github.com/jact/openclinic/">GitHub</a>.</p>
+
+  <time datetime="2013-09-12">2013-09-12</time>
+</article>
+
+<article id="released_0_8">
   <h1>OpenClinic 0.8 released after 8 years!</h1>
 
   <p>Although more versions have not been published since the end of 2004, OpenClinic development has not been standing all this time. The application has been completely rewritten and has a new graphical look. Changes in MySQL (the default storage is InnoDB now), have led me to publish a new version.</p>
