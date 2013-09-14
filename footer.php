@@ -9,7 +9,7 @@
  * @package   OpenClinic Web Site
  * @copyright 2002-2013 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: footer.php,v 1.12 2013/09/12 14:09:40 David Bowman Exp $
+ * @version   CVS: $Id: footer.php,v 1.13 2013/09/14 20:01:36 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -78,7 +78,7 @@
 
           <li><a href="http://sourceforge.net/forum/?group_id=70742">Forums</a></li>
         </ul>
-      </nav
+      </nav>
 
       <nav>
         <h1>Advertising</h1>
