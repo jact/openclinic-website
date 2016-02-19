@@ -1,14 +1,13 @@
 /**
  * openclinic.css
  *
- * CSS for OpenClinic Web Site
+ * CSS for OpenClinic Website
  *
  * Licensed under the Creative Commons License
  *
- * @package   OpenClinic Web Site
- * @copyright 2002-2013 jact
+ * @package   OpenClinic Website
+ * @copyright 2002-2016 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: openclinic.css,v 1.11 2013/09/06 10:32:18 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -52,8 +51,8 @@ html>body .mir {
 }
 /* End of hack */
 #shortcuts {
-  width: 70%;
-  margin-left: -70%;
+  width: 60%;
+  margin-left: -60%;
   margin-top: 20px;
   text-align: right;
 }
@@ -61,8 +60,11 @@ html>body .mir {
   display: inline;
 }
 #shortcuts a {
-  padding: 15px 30px 15px 50px;
+  padding: 15px 30px 15px 45px;
   font-weight: bold;
+}
+#shortcuts a:first {
+  padding-left: 0;
 }
 html>body a#download {
   background: #fff url(../i/download.png) no-repeat left center;
@@ -367,4 +369,49 @@ td {
 }
 .center {
   text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  #home_page {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .item {
+    float: none;
+  }
+  #content, #main nav.item, #main aside {
+    width: 98%;
+    margin-left: -98%;
+  }
+  #home_page {
+    width: 60%;
+    float: left;
+  }
+  #shortcuts {
+    width: 40%;
+    margin-left: -40%;
+  }
+  #shortcuts a {
+    padding: 28px 24px 24px 38px;
+    width: 48px;
+    height: 48px;
+    font-size: 1px;
+    color: #fff;
+  }
+  #copyright {
+    float: none;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #home_page {
+    width: 100%;
+    float: none;
+  }
+  #shortcuts {
+    display: none;
+  }
 }
