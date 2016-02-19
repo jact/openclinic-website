@@ -6,10 +6,9 @@
  *
  * Licensed under the Creative Commons License
  *
- * @package   OpenClinic Web Site
- * @copyright 2002-2013 jact
+ * @package   OpenClinic Website
+ * @copyright 2002-2016 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: footer.php,v 1.13 2013/09/14 20:01:36 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -97,7 +96,7 @@
   <footer>
     <p id="copyright">Copyright &copy; 2002-<?php echo date("Y"); ?> <a href="mailto:openclinic@gmail.com?subject=OpenClinic" accesskey="9">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a>.</p>
 
-    <time datetime="2013-09-12">Last modified: 2013-09-12</time>
+    <time datetime="2016-02-19">Last modified: 2016-02-19</time>
   </footer>
 </div>
 </body>
