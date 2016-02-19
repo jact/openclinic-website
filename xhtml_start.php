@@ -6,10 +6,9 @@
  *
  * Licensed under the Creative Commons License
  *
- * @package   OpenClinic Web Site
- * @copyright 2002-2013 jact
+ * @package   OpenClinic Website
+ * @copyright 2002-2016 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: xhtml_start.php,v 1.8 2013/09/06 10:29:54 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -87,8 +86,7 @@
     // To prevent 'short_open_tag = On' mistake
     echo '<?xml version="1.0" encoding="' . OPEN_ENCODING . '" standalone="no" ?>' . "\n";
   }*/
-?>
-<!DOCTYPE>
+?><!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
 <meta charset="<?php echo OPEN_CHARSET; ?>" />
@@ -106,6 +104,8 @@
   }
   echo "OpenClinic Project";
 ?></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <meta http-equiv="imagetoolbar" content="no" />
 
