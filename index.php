@@ -6,10 +6,9 @@
  *
  * Licensed under the Creative Commons License
  *
- * @package   OpenClinic Web Site
- * @copyright 2002-2013 jact
+ * @package   OpenClinic Website
+ * @copyright 2002-2016 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: index.php,v 1.7 2013/09/06 10:27:43 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -82,22 +81,22 @@
 
   <ul>
     <li>
-      <p>For OpenClinic &lt;= 0.7:</p>
+      <p>For OpenClinic &gt; 0.7:</p>
 
       <ul>
-        <li><a href="http://www.php.net/">PHP4</a> &gt;= 4.2 (due to session variable changes in PHP 4.2) compiled with MySQL support (tested with versions 4.2.x, 4.3.x and 4.4.x);</li>
+        <li><a href="http://www.php.net/">PHP5</a> &gt;= 5.3.1 (incompatible with PHP4) <strong>compiled with MySQL support</strong>;</li>
 
-        <li><a href="http://www.mysql.com/">MySQL</a> (tested with versions 3.23.36, 3.23.49, 3.23.51, 3.23.52, 3.23.54, 3.23.55, 4.0.16, 4.0.18 and 4.0.26)</li>
+        <li><a href="http://www.mysql.com/">MySQL</a> &gt; 5 (tested with 5.1 version)</li>
       </ul>
     </li>
 
     <li>
-      <p>For OpenClinic &gt; 0.7:</p>
+      <p>For OpenClinic &lt;= 0.7:</p>
 
       <ul>
-        <li>PHP5 &gt;= 5.3.1 (incompatible with PHP4) <strong>compiled with MySQL support</strong>;</li>
+        <li>PHP4 &gt;= 4.2 (due to session variable changes in PHP 4.2) compiled with MySQL support (tested with versions 4.2.x, 4.3.x and 4.4.x);</li>
 
-        <li>MySQL &gt; 5 (tested with 5.1 version)</li>
+        <li>MySQL (tested with versions 3.23.36, 3.23.49, 3.23.51, 3.23.52, 3.23.54, 3.23.55, 4.0.16, 4.0.18 and 4.0.26)</li>
       </ul>
     </li>
   </ul>
@@ -123,7 +122,16 @@
     <dd><a href="./openclinic/LICENSE">GNU General Public License (GPL)</a></dd>
 
     <dt>Language</dt>
-    <dd>English (all versions), Spanish (all versions), Bulgarian (from 0.3 to 0.5 version, both included), Dutch (0.6, 0.7 and 0.8 versions), Traditional Chinese (0.7 and 0.8 versions)</dd>
+    <dd>
+        <ul>
+            <li>English (all versions),</li>
+            <li>Spanish (all versions),</li>
+            <li>Bulgarian (from 0.3 to 0.5 version, both included),</li>
+            <li>Dutch (0.6, 0.7 and 0.8 versions),</li>
+            <li>Traditional Chinese (0.7 and 0.8 versions),</li>
+            <li>Italian (0.8 versions)</li>
+        </ul>
+    </dd>
 
     <dt>Operating System</dt>
     <dd>OS Independent</dd>
