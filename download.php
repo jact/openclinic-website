@@ -6,10 +6,9 @@
  *
  * Licensed under the Creative Commons License
  *
- * @package   OpenClinic Web Site
- * @copyright 2002-2013 jact
+ * @package   OpenClinic Website
+ * @copyright 2002-2016 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: download.php,v 1.9 2013/09/12 14:08:39 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -70,8 +69,9 @@
     <tbody>
 <?php
   $array = array(
-    '58c36f2c4515f0648fdd07d80d5c57ad' => 'openclinic-0.8.1.tar.bz2',
-    '25f7ecb0ca8a8cb376bb1576726afd5d' => 'openclinic-0.8.tar.bz2',
+    '2cbfce5b7b7d47dc76c0a4856db51723' => 'openclinic-0.8.2.tar.bz2',
+    //'58c36f2c4515f0648fdd07d80d5c57ad' => 'openclinic-0.8.1.tar.bz2',
+    //'25f7ecb0ca8a8cb376bb1576726afd5d' => 'openclinic-0.8.tar.bz2',
     '0338bd0e62ecc971d4a863a388cc1ad1' => 'openclinic-0.7.tar.bz2',
     '029f51523c202e2d1afff8837adb2df5' => 'openclinic-0.7.tar.gz',
     'a26aae34d4f9dd0f292d2e040b7c7f7b' => 'openclinic-0.6.tar.bz2',
