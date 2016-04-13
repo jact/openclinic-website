@@ -6,10 +6,9 @@
  *
  * Licensed under the Creative Commons License
  *
- * @package   OpenClinic Web Site
- * @copyright 2002-2013 jact
+ * @package   OpenClinic Website
+ * @copyright 2002-2016 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: faq.php,v 1.9 2013/09/06 10:26:54 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -31,6 +30,22 @@
   <p>
     We expect your questions at <a href="mailto:openclinic@gmail.com?subject=OpenClinic">openclinic at gmail dot com</a>!
   </p>
+</article>
+
+<article id="missing_language_linux">
+  <h1>Missing language on Linux system</h1>
+
+  <p>
+    If you can not configure OpenClinic with some of the languages in which it is translated, try to run the <code>locale-gen</code> command to generate the language of your choice in the system.
+  </p>
+
+  <p>An example:</p>
+
+  <pre><code>
+$ sudo locale-gen es_ES
+  </code></pre>
+
+  <time datetime="2016-04-13">2016-04-13</time>
 </article>
 
 <article id="deleting_patient_problem">
