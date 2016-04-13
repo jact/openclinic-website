@@ -6,10 +6,9 @@
  *
  * Licensed under the Creative Commons License
  *
- * @package   OpenClinic Web Site
- * @copyright 2002-2013 jact
+ * @package   OpenClinic Website
+ * @copyright 2002-2016 jact
  * @license   http://creativecommons.org/licenses/by/2.0/
- * @version   CVS: $Id: news.php,v 1.9 2013/09/12 14:10:42 David Bowman Exp $
  * @author    jact <openclinic@gmail.com>
  */
 
@@ -25,7 +24,23 @@
   require_once("./header.php");
 ?>
 
-<article class="last" id="released_0_8_1">
+<article class="last" id="released_0_8_2">
+  <h1>OpenClinic 0.8.2 released!</h1>
+
+  <p>Changes over previous version (0.8.1):</p>
+
+  <ul>
+    <li><a href="https://sourceforge.net/p/openclinic/bugs/13/">Fixed login problems in Chrome browsers</a></li>
+
+    <li><a href="https://sourceforge.net/p/openclinic/bugs/14/">Fixed problem of entering characters from different languages</a></li>
+  </ul>
+
+  <p>Also, source code repository has been published on <a href="https://github.com/jact/openclinic/">GitHub</a>.</p>
+
+  <time datetime="2016-04-12">2016-04-12</time>
+</article>
+
+<article id="released_0_8_1">
   <h1>OpenClinic 0.8.1 released!</h1>
 
   <p>Changes over previous version (0.8), are these:</p>
