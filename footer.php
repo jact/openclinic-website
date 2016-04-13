@@ -96,7 +96,7 @@
   <footer>
     <p id="copyright">Copyright &copy; 2002-<?php echo date("Y"); ?> <a href="mailto:openclinic@gmail.com?subject=OpenClinic" accesskey="9">Jose Antonio Chavarría</a>. This website is licensed under <a rel="license" href="http://creativecommons.org/licenses/by/2.0/" title="Creative Commons License">CC License</a>.</p>
 
-    <time datetime="2016-02-19">Last modified: 2016-02-19</time>
+    <time datetime="2016-04-13">Last modified: 2016-04-13</time>
   </footer>
 </div>
 </body>
